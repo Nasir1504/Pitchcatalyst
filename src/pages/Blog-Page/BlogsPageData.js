@@ -1,6 +1,7 @@
 
-import Frame from "../../assets/imgs/blog/technology-communication.jpg";
 
+// imgs
+import Frame from "../../assets/imgs/blog/technology-communication.jpg";
 
 const MiddleBlogsData = [
     {

@@ -24,7 +24,6 @@ export default function BlogPage(props) {
         <div className="blog-page-main-conainer">
             <Stickyroll pages={1} factor={1.5}>
                     <BlogMainComp HandlePageTitle={props.HandlePageTitle} />
-
             </Stickyroll>
         </div>)
 }
