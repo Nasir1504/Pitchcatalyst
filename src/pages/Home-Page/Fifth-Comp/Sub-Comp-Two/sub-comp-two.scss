@@ -1,0 +1,161 @@
+.sub-comp-two-main-container {
+    width: 100%;
+    height: 200vw;
+    position: relative;
+    // background-color: #fff;
+
+    .content-div {
+        position: absolute;
+        top: 10%;
+        z-index: 2;
+        overflow: hidden;
+        padding: 0 2% 0.8% 2%;
+        border-bottom: 0.1vw solid #7E7E7E;
+        transition: ease-in-out 1.2s;
+
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            color: #E1FF00;
+            font-size: 3vw;
+            font-weight: 400;
+            margin-bottom: 4%;
+
+            span {
+                width: 8vw;
+                height: 4vw;
+
+                img {
+                    margin-left: -2%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .analytics-heading{
+
+            color: #fff;
+            font-weight: 500;
+            font-size: 5vw;
+            text-shadow: 0.3vw 0.2vw 0.3vw #000;
+
+            span {
+                color: #E1FF00;
+            }
+        }
+    }
+
+    .comp-one-div {
+        position: absolute;
+        transition: all ease-in-out 1.2s;
+        width: 36vw;
+        height: 44vw;
+        left: 6%;
+        bottom: 10.5%;
+        // map
+    }
+
+    .comp-two-div {
+        width: 48vw;
+        height: 10vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 8%;
+        top: 26%;
+        //SLIDE DURATION
+
+    }
+
+    .comp-three-div {
+        width: 58vw;
+        height: 58vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 10%;
+        top: 36%;
+        // Calander
+
+    }
+
+    .comp-four-div {
+        width: 50vw;
+        height: 54vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 48%;
+        top: 67.6%;
+        // Cities
+
+    }
+
+    .comp-five-div {
+        width: 48vw;
+        height: 10vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 75%;
+        top: 48%;
+        // Time Duration
+
+
+    }
+
+    .comp-six-div {
+        width: 48vw;
+        height: 28vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 74%;
+        top: 26%;
+        //Graph
+
+
+    }
+
+    .comp-eight-div {
+        width: 46vw;
+        height: 58vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 120%;
+        top: 40%;
+        //Heat Map
+
+    }
+    .comp-nine-div {
+        width: 35vw;
+        height: 55vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 120%;
+        top: 34%;
+        //Poll Option
+
+    }
+    .comp-ten-div {
+        width: 50vw;
+        height: 12vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 120%;
+        top: 45%;
+        //Subscribe
+
+    }
+
+    .comp-eleven-div {
+        width: 35vw;
+        height: 52vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 120%;
+        top: 45%;
+        //Insights
+
+    }
+
+}

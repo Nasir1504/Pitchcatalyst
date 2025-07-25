@@ -1,0 +1,222 @@
+.op-comp-two-main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: #000;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heading1 {
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: 300;
+        letter-spacing: -0.2vw;
+        line-height: 4.5vw;
+        text-shadow: 0.2vw 0.15vw 2px #000;
+        position: absolute;
+        text-align: center;
+        // transition: ease-in-out 1.5s;
+        opacity: 0;
+
+        span {
+            font-size: 5.5vw;
+            color: #E1ff00;
+        }
+    }
+
+    .heading2 {
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: 300;
+        letter-spacing: -0.2vw;
+        line-height: 4.5vw;
+        text-shadow: 0.2vw 0.15vw 2px #000;
+        position: absolute;
+        text-align: center;
+        // transition: ease-in-out 1.5s;
+        opacity: 0;
+
+        span {
+            font-size: 6vw;
+            color: #E1ff00;
+        }
+    }
+
+
+    .ei-card-div {
+        position: absolute;
+        width: 78%;
+        height: 60%;
+        transition: ease-out 1s;
+        // border: 1px solid #fff;
+        // transform: translateY(-100vh) scale(0.5);
+
+        .inner-div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .ei-card-two-div {
+        position: absolute;
+        width: 90%;
+        height: 26.5%;
+        transition: 0.5s;
+
+        .inner-div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // border: 1px solid #fff;
+        }
+    }
+
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .op-comp-two-main-container {
+        .heading1 {
+            font-size: 5vw;
+            letter-spacing: -0.1vw;
+            line-height: 6.5vw;
+
+            span {
+                font-size: 7.5vw;
+            }
+        }
+
+        .heading2 {
+            font-size: 4.5vw;
+            letter-spacing: -0.1vw;
+            line-height: 6.5vw;
+
+            span {
+                font-size: 7.5vw;
+            }
+        }
+
+
+        .ei-card-div {
+            position: absolute;
+            width: 78%;
+            height: 60%;
+            // transition: 0.5s;
+
+            .inner-div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .ei-card-two-div {
+            position: absolute;
+            width: 90%;
+            height: 26.5%;
+            transition: 0.5s;
+
+            .inner-div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                // border: 1px solid #fff;
+            }
+
+            .start-leading-div {
+                position: absolute;
+                width: 100%;
+                height: 60vh;
+                // background-color: #fff;
+                // border: 1px solid #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 8%;
+                opacity: 0;
+                transition: 0.5s;
+
+                .top-heading {
+                    margin-top: -80%;
+                    color: #fff;
+                    font-size: 9vw;
+                    font-weight: 600;
+                    text-align: center;
+                    line-height: 5vw;
+
+                    span {
+                        color: #E1ff00;
+                        font-size: 5vw;
+                        font-weight: 400;
+
+                    }
+                }
+
+                .bottom-heading {
+                    color: #fff;
+                    font-size: 12vw;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 6vw;
+
+                    span {
+                        color: #E1ff00;
+                        font-size: 5.5vw;
+                        font-weight: 400;
+                    }
+                }
+
+                .mouse-logo {
+                    position: absolute;
+                    width: 9%;
+                    height: 10%;
+                    border: 2px solid #E1ff00;
+                    border-radius: 500px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    bottom: 15%;
+                    background-color: rgba(255,255,255,0.1);
+                    box-shadow: inset 0.2vw 0.4vw 2px #000;
+
+                    span {
+                        width: 0.8vw;
+                        border-radius: 50px;
+                        height: 20%;
+                        background-color: #fff;
+                        margin-top: -60%;
+                    }
+
+
+                }
+
+                .para {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 4vw;
+                    bottom: 6%;
+
+                    span {
+                        font-size: 8vw;
+                        color: #E1ff00;
+                    }
+                }
+            }
+
+
+        }
+
+
+
+    }
+}

@@ -1,0 +1,125 @@
+.join-our-family-comp-main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    // transform: translateY(100vh);
+    transition: 2s ease-out;
+    // z-index: 2;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 0;
+
+    .join-our-family-comp-main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        // background-color: #ff5566;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .our-family-heading {
+            position: absolute;
+            width: 26vw;
+            object-fit: contain;
+            transition: 1.5s ease-out;
+            transform: translateY(100vh) scale(0.6);
+        }
+
+     
+        .apply-now-btn {
+            position: absolute;
+            font-size: 1.8vw;
+            font-weight: 500;
+            width: 14vw;
+            height: 4vw;
+            border-radius: 100px;
+            background-color: #000;
+            letter-spacing: -0.01vw;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1;
+            box-shadow: 0.2vw 0.4vw 2px #00000080;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1px;
+            overflow: hidden;
+            margin-top: 55vh;
+            transition: 1.5s ease-out;
+            transform: translateY(100vh);
+
+
+            @keyframes strokeKF {
+                100% {
+                    transform: rotate(-360deg);
+                }
+            }
+
+            &:hover {
+                &::before {
+                    animation: strokeKF 2.5s cubic-bezier(.74, .45, .66, .65) infinite;
+                    // animation-timing-function:;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 25vw;
+                height: 25vw;
+                background: linear-gradient(220deg, #E1FF00 42.2%, #232323 50.85%);
+                z-index: 0;
+            }
+
+            a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                text-decoration: none;
+                color: #fff;
+
+            }
+        }
+
+        .bg-sphare1,
+        .bg-sphare2,
+        .bg-sphare3 {
+            position: absolute;
+            transition: 2.4s ease-out;
+        }
+
+        .bg-sphare1 {
+            width: 30vw;
+            object-fit: contain;
+            margin-top: -80vh;
+            margin-right: -75vw;
+        }
+
+
+        .bg-sphare2 {
+            width: 8vw;
+            object-fit: contain;
+            margin-bottom: -90vh;
+            margin-right: -40vw;
+        }
+
+        .bg-sphare3 {
+            width: 10vw;
+            object-fit: contain;
+            margin-top: -20vh;
+            margin-left: -25vw;
+        }
+
+    }
+}

@@ -1,0 +1,296 @@
+.our-story-third-comp-main-container {
+    position: absolute;
+    width: 100%;
+    height: 58vw;
+    top: 0;
+    left: 0;
+    background-color: #e1ff01;
+
+    // background-color: red;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 1.5s;
+
+
+    .main-content-div {
+        // transform: translate(140%);
+        width: 70%;
+        height: 50%;
+        margin-left: -10%;
+        // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: ease 1.2s;
+
+
+        .top-content {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .padding-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 70%;
+                background-color: #e1ff01;
+                transition: ease-in-out 1.2s;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-size: 2.2vw;
+                font-weight: 600;
+                line-height: 3vw;
+
+                span {
+                    color: #fff;
+                    text-shadow: 0.15vw 0.15vw 2px #000;
+                }
+            }
+        }
+
+        .bottom-content {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .padding-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 70%;
+                background-color: #e1ff01;
+                transition: ease-in-out 1.2s;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-size: 1.2vw;
+                font-weight: 600;
+                opacity: 0.8;
+                line-height: 2vw;
+
+            }
+        }
+    }
+
+    @keyframes VectorKF {
+        0% {
+            margin-bottom: -50%;
+
+        }
+
+        40% {
+            margin-bottom: 4%;
+
+        }
+
+        60% {
+            margin-bottom: -3%;
+
+        }
+
+        80% {
+            margin-bottom: 2%;
+
+        }
+
+        100% {
+            margin-bottom: 0%;
+
+        }
+
+    }
+
+    @keyframes VectorSecondKF {
+        0% {
+            margin-bottom: 4%;
+
+        }
+
+        30% {
+            margin-bottom: -3%;
+
+        }
+
+        60% {
+            margin-bottom: 2%;
+
+        }
+
+        100% {
+            margin-bottom: 0%;
+
+        }
+
+    }
+
+    @keyframes ElementKF {
+        100% {
+            // transform: rotate(-860deg);
+            transform: rotate(-360deg);
+
+        }
+
+    }
+
+    .vector-img-div {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: #fff;
+        width: 2.5%;
+
+
+        .vector-img {
+            // position: absolute;
+            width: 100%;
+            object-fit: contain;
+            // bottom: 10%;
+            // left: 10%;
+            // transition: 0.2;
+            // border: 1px solid black;
+            z-index: 1;
+            transition: 1s;
+            // animation: 1s ElementKF ease-in-out infinite alternate;
+            // margin-left: 10%;
+            // margin-bottom: 5%;
+            cursor: pointer;
+            // animation: reverse;
+        }
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .our-story-third-comp-main-container {
+        height: 51.2vw;
+
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .our-story-third-comp-main-container {
+        height: 50.6vw;
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .our-story-third-comp-main-container {
+        height: 100vh;
+
+        .main-content-div {
+            .top-content {
+                p {
+                    font-size: 4.2vw;
+                    font-weight: 600;
+                    line-height: 5vw;
+                }
+            }
+
+            .bottom-content {
+                p {
+                    font-size: 3.2vw;
+                    font-weight: 600;
+                    line-height: 4.5vw;
+
+                }
+            }
+        }
+
+        @keyframes VectorKF {
+            0% {
+                margin-bottom: -50%;
+
+            }
+
+            40% {
+                margin-bottom: 4%;
+
+            }
+
+            60% {
+                margin-bottom: -3%;
+
+            }
+
+            80% {
+                margin-bottom: 2%;
+
+            }
+
+            100% {
+                margin-bottom: 0%;
+
+            }
+
+        }
+
+        @keyframes VectorSecondKF {
+            0% {
+                margin-bottom: 4%;
+
+            }
+
+            30% {
+                margin-bottom: -3%;
+
+            }
+
+            60% {
+                margin-bottom: 2%;
+
+            }
+
+            100% {
+                margin-bottom: 0%;
+
+            }
+
+        }
+
+        @keyframes ElementKF {
+            100% {
+                // transform: rotate(-860deg);
+                transform: rotate(-360deg);
+
+            }
+
+        }
+
+        .vector-img-div {
+            width: 10%;
+        }
+    }
+
+}

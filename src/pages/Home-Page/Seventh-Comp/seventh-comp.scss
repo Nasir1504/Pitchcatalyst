@@ -1,0 +1,170 @@
+.seventh-comp-main-container {
+    width: 100%;
+    height: 55vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: #0A1B1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    z-index: 0;
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: url('https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/pawel-czerwinski-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.17;
+        mix-blend-mode: overlay;
+    }
+
+    .main-content {
+        // margin-bottom: 15%;
+        transition: 1.2s;
+        transform: translateX(200%);
+
+        .top-para {
+            color: #fff;
+            font-size: 1.9vw;
+            // margin-left: 0%;
+
+            span {
+                letter-spacing: 1.42vw;
+            }
+
+        }
+
+        .bottom-text-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -2%;
+
+            p {
+                color: #fff;
+                font-size: 4vw;
+                font-weight: 600;
+                line-height: 2.5vw;
+                text-align: center;
+                margin-top: 1%;
+
+                .para-span {
+                    margin-left: 6%;
+                    font-size: 1.9vw;
+                    font-weight: 400;
+                    letter-spacing: 0.3vw;
+
+
+                }
+            }
+
+            .big-heading {
+                color: #E1FF01;
+                font-size: 9vw;
+                font-weight: 600;
+
+                .comma-span {
+                    color: #fff;
+                    margin-left: -4%;
+
+                }
+            }
+        }
+    }
+}
+
+
+// //============================================================================================
+
+// //-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .seventh-comp-main-container {
+        width: 100%;
+        height: 100%;
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top-para {
+                font-size: 7.6vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                line-height: 6.5vw;
+
+                b {
+                    font-size: 16vw;
+                    font-weight: 600;
+                    margin-top: 10%;
+                }
+
+                span {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 6vw;
+                    letter-spacing: 6.5vw;
+                    padding-left: 7%;
+                    
+                }
+
+            }
+
+            .bottom-text-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: -2%;
+
+                p {
+                    width: 100%;
+                    font-size: 4vw;
+                    font-weight: 300;
+                    line-height: 2.5vw;
+                    text-align: center;
+                    margin-top: 1%;
+                    display: flex;
+                    margin-top: 10%;
+                    justify-content: center;
+                    align-items: center;
+
+                    .para-span {
+                        margin-left: 6%;
+                        font-size: 4vw;
+                        font-weight: 300;
+
+                    }
+                }
+
+                .big-heading {
+                    color: #E1FF01;
+                    font-size: 12vw;
+                    font-weight: 600;
+                    margin-top: 5%;
+
+                    .comma-span {
+                        color: #fff;
+                        margin-left: -4%;
+
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,283 @@
+.thank-you-page-main-container {
+    width: 100%;
+    min-width: 100%;
+    height: 58vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e1ff00;
+    position: relative;
+    overflow: hidden;
+    transition: ease-in-out 2.5s;
+
+
+    .focused-circle-container {
+        position: absolute;
+        margin-top: 0.2%;
+        width: 20vw;
+        height: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        transition: ease-in-out 0.5s;
+        // border: 1px solid black;
+
+
+        .focused-circle {
+            position: absolute;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            border: 1px solid #000;
+            margin-top: 2%;
+            transition: ease-in-out 1.5s;
+            z-index: -2;
+
+
+        }
+    }
+
+    .contents-div {
+        width: 60%;
+        height: 80%;
+        margin-top: 5vw;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        // transform: scale(0.2);
+        transition: 2.5s ease-in-out;
+
+        h1 {
+            width: auto;
+            height: 2.8vw;
+            color: #fff;
+            font-size: 2vw;
+            border-bottom: 1px solid #fff;
+            font-weight: 300;
+
+            span {
+                color: #e1ff00;
+                font-weight: 600;
+
+            }
+        }
+
+        h3 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.4vw;
+            font-weight: 500;
+            margin-top: 1vw;
+
+            .span1 {
+                font-weight: 300;
+            }
+
+        }
+
+        .para-one {
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.1vw;
+            margin-top: 7.5vw;
+            line-height: 1.5;
+
+            em {
+                color: #e1ff00;
+                font-weight: 600;
+            }
+        }
+
+        .para-two {
+            color: #fff;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.1vw;
+            margin-top: 2vw;
+            line-height: 1.5;
+
+
+        }
+
+        .link-btn {
+            font-size: 1.5vw;
+            font-weight: 600;
+            text-decoration: none;
+            color: #222;
+            background: #e1ff00;
+            border-radius: 500px;
+            padding: 0.4em 1.5em;
+            border: 1px solid #e1ff00;
+            margin-top: 5vw;
+            cursor: pointer;
+            text-shadow: 0vw 0.1vw 2px #000;
+            transition: ease-in-out 0.2s;
+
+
+
+            &:hover {
+                box-shadow: inset 0.4vw 0.1vw 5px #000;
+                color: #000;
+
+            }
+
+        }
+
+        // .bottom-left-para {
+        //     position: absolute;
+        //     top: 90%;
+        //     left: 5%;
+        //     color: #fff;
+        //     font-size: 1.2vw;
+        //     font-weight: 500;
+        //     line-height: 1;
+        //     text-transform: capitalize;
+
+        //     span {
+        //         font-size: 0.85vw;
+        //         font-weight: 300;
+        //     }
+        // }
+
+        .bottom-right-para {
+            position: absolute;
+            top: 75%;
+            right: 5%;
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 500;
+            line-height: 1;
+            text-transform: capitalize;
+
+            span {
+                font-size: 0.85vw;
+                font-weight: 300;
+            }
+        }
+    }
+
+}
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .thank-you-page-main-container {
+        height: 58vw;
+
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .thank-you-page-main-container {
+        height: 58vw;
+
+    }
+}
+
+//=====================================================================================
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .thank-you-page-main-container {
+        height: 100vh;
+
+        .contents-div {
+            width: 90%;
+            height: 38%;
+            margin-top: 0vw;
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            // transform: scale(0.2);
+            transition: 2.5s ease-in-out;
+
+            h1 {
+                color: #fff;
+                font-size: 6vw;
+                text-align: center;
+                line-height: 1;
+                border-bottom: none;
+
+
+                span {
+                    color: #e1ff00;
+                    font-weight: 600;
+                    border-bottom: 1px solid #e1ff00;
+
+                }
+            }
+
+            h3 {
+                color: #fff;
+                text-align: center;
+                font-size: 3.5vw;
+                font-weight: 500;
+                margin-top: 15vw;
+
+                .span1 {
+                    font-weight: 300;
+                }
+
+            }
+
+            .para-one {
+                color: #fff;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 3.1vw;
+                margin-top: 8vw;
+                line-height: 1.5;
+
+                em {
+                    color: #e1ff00;
+                    font-weight: 600;
+                }
+            }
+
+            .para-two {
+                display: none;
+
+            }
+
+            .link-btn {
+                font-size: 4vw;
+                text-decoration: none;
+                color: #fff;
+                background: #000 !important;
+                border-radius: 500px;
+                padding: 0.4em 1.5em;
+                border: 1px solid #e1ff00;
+                margin-top: 5vw;
+                cursor: pointer;
+            }
+
+            .bottom-left-para {
+                display: none;
+
+            }
+
+            .bottom-right-para {
+                display: none;
+
+            }
+        }
+
+    }
+}

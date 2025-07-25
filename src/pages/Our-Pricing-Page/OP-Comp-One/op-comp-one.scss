@@ -1,0 +1,180 @@
+.op-comp-one-main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: #E1FF00;
+    // background-color: #000;
+    // border: 1px solid #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    overflow: hidden;
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+
+    #hidden-div {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: 2;
+        // background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .wave-container {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        // border: 1px solid black;
+        // left: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in-out 1.5s;
+
+
+        @keyframes LogoKF {
+            0% {
+                transform: translateY(800%);
+            }
+
+            30% {
+                transform: translateY(-150%);
+
+            }
+
+            50% {
+                transform: translateY(80%);
+
+            }
+
+            75% {
+                transform: translateY(-40%);
+
+            }
+
+            100% {
+                transform: translateY(0);
+
+            }
+
+
+        }
+
+        .logo-img {
+            position: absolute;
+            width: 65%;
+            z-index: 1;
+            transition: ease-in-out 2s;
+            cursor: pointer;
+            // animation: LogoKF 2s ease-in-out infinite;
+
+
+        }
+
+        .our-pricing-heading {
+            position: absolute;
+            left: 70.8vw;
+            display: flex;
+            font-size: 6vw;
+            font-weight: 600;
+            letter-spacing: -0.4vw;
+            color: #fff;
+            text-shadow: 0px 0.15vw 4px #333;
+            // background-color: #E1FF00;
+            cursor: pointer;
+            z-index: 2;
+            // transition: 2s;
+
+            span {
+                color: #000;
+            }
+        }
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .op-comp-one-main-container {
+        width: 100%;
+        height: 100%;
+    
+    
+        .wave-container {
+            position: absolute;
+            width: 35vw;
+            height: 35vw;
+            // border: 1px solid black;
+            // left: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out 1.5s;
+    
+    
+            @keyframes LogoKF {
+                0% {
+                    transform: translateY(800%);
+                }
+    
+                30% {
+                    transform: translateY(-150%);
+    
+                }
+    
+                50% {
+                    transform: translateY(80%);
+    
+                }
+    
+                75% {
+                    transform: translateY(-40%);
+    
+                }
+    
+                100% {
+                    transform: translateY(0);
+    
+                }
+    
+    
+            }
+    
+            .logo-img {
+                position: absolute;
+                width: 70%;
+                z-index: 1;
+                transition: ease-in-out 2s;
+                cursor: pointer;
+                // animation: LogoKF 2s ease-in-out infinite;
+    
+    
+            }
+    
+            .our-pricing-heading {
+                position: absolute;
+                left: 84.8vw;
+                display: flex;
+                font-size: 10vw;
+                letter-spacing: -0.4vw;
+                color: #fff;
+                text-shadow: 0px 0.15vw 4px #333;
+                // background-color: #E1FF00;
+                cursor: pointer;
+                z-index: 2;
+                // transition: 2s;
+    
+                span {
+                    color: #000;
+                }
+            }
+        }
+    }
+    
+}

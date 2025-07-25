@@ -1,0 +1,284 @@
+.comp-two-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: #666;
+
+    .lamp-off-img {
+        position: absolute;
+        top: 18%;
+        left: -26%;
+        width: 100%;
+        object-fit: contain;
+        opacity: 1;
+        transition: 0.2s;
+        transform: scale(1.4, 2);
+
+    }
+
+    .lamp-on-img {
+        position: absolute;
+        top: 17.8%;
+        left: -26%;
+        width: 100%;
+        object-fit: contain;
+        opacity: 0;
+        transition: 0.1s;
+        transform: scale(1.4, 2);
+
+    }
+
+    @keyframes ThirdCompContentKF {
+        0% {
+            transform: translateY(0%);
+
+        }
+
+        0% {
+            transform: translateY(-15%) scale(1.05);
+
+        }
+
+        40% {
+            transform: translateY(5%) scale(0.95);
+        }
+
+        70% {
+            transform: translateY(-5%) scale(1.02);
+
+        }
+
+        100% {
+            transform: translateY(0%) scale(1);
+
+        }
+    }
+
+    @keyframes ThirdCompContentSecondKF {
+        0% {
+            transform: translateY(0%);
+
+        }
+
+        0% {
+            transform: translate(-35%) scale(1.05);
+
+        }
+
+        40% {
+            transform: translate(15%) scale(0.95);
+        }
+
+        70% {
+            transform: translate(-5%) scale(1.02);
+
+        }
+
+        100% {
+            transform: translate(0%) scale(1);
+
+        }
+    }
+
+    .content-div {
+        position: absolute;
+        top: 24%;
+        width: 70%;
+        height: 50%;
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        p {
+            color: #fff;
+            font-size: 4vw;
+            font-weight: 300;
+            margin-bottom: 2%;
+            // animation: ThirdCompContentSecondKF 2s ease-in-out infinite;
+
+        }
+
+
+        .heading {
+            font-size: 10vw;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 6%;
+            // animation: ThirdCompContentKF 2s ease-in-out infinite;
+
+
+        }
+
+        .content-para {
+            text-shadow: none;
+            color: #fff;
+            opacity: 0.6;
+            font-weight: 400;
+            margin-bottom: 20%;
+            font-size: 3.4vw;
+            line-height: 4.5vw;
+            text-align: center;
+            
+            // animation: ThirdCompContentKF 2s ease-in-out infinite;
+
+        }
+
+        .redesign-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 35vw;
+            height: 8vw;
+            border-radius: 50px;
+            color: #E1FF00;
+            overflow: hidden;
+            background: linear-gradient(172.48deg, #797979 0.62%, rgba(81, 81, 81, 0.483263) 68.05%, rgba(43, 43, 43, 0) 131.12%);
+            cursor: pointer;
+            // animation: ThirdCompContentSecondKF 2s ease-in-out infinite;
+
+
+        }
+
+    }
+
+
+    @keyframes PulgInVectorKF {
+        0% {
+            transform: translate(0%);
+
+        }
+
+        10% {
+            transform: translate(-35%) scale(1.1);
+
+        }
+
+        40% {
+            transform: translate(15%) scale(0.9);
+        }
+
+        70% {
+            transform: translate(-15%) scale(1.05);
+
+        }
+
+        100% {
+            transform: translate(0%) scale(1);
+
+        }
+    }
+
+    @keyframes PulgInKF {
+        0% {
+            transform: translate(0%);
+
+        }
+
+        10% {
+            transform: translate(-150%) scale(1.1);
+
+        }
+
+        40% {
+            transform: translate(55%) scale(0.9);
+        }
+
+        70% {
+            transform: translate(-45%) scale(1.05);
+
+        }
+
+        100% {
+            transform: translate(0%) scale(1);
+
+        }
+    }
+
+
+
+    .plugins-logo-div {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 2vw;
+        border: none;
+        // bottom: 10%;
+        background-color: #000;
+        overflow: hidden;
+        // animation: PulgInKF 2s ease-in-out infinite;
+        transform: translate(600%);
+        z-index: 1;
+
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(400deg);
+
+            }
+        }
+
+        .plugins-after-div {
+            position: relative;
+            margin-left: 1.5%;
+            margin-top: 1.5%;
+            width: 97%;
+            height: 97%;
+            background-color: #161616;
+            border-radius: 2vw;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                padding: 10% 15%;
+                font-size: 8vw;
+            }
+
+            img {
+                width: 60%;
+                object-fit: cover;
+                
+
+            }
+
+        }
+
+        .plugins-before-div {
+            position: absolute;
+            top: -80%;
+            left: -80%;
+            width: 250%;
+            height: 250%;
+            background-image: linear-gradient(135deg, #E1FF01 15.56%, rgba(0, 0, 0, 0) 45.57%);
+            animation: rotate 3.5s infinite linear alternate-reverse;
+            // background-color: #e1ff01;
+            z-index: 0;
+        }
+    }
+
+    .vector {
+        position: absolute;
+        object-fit: contain;
+        // animation: PulgInVectorKF 2s ease-in-out infinite;
+        transform: translate(150%);
+        z-index: 0;
+
+    }
+
+    .bottom-vector1 {
+        width: 95%;
+        bottom: 8%;
+        right: 14%;
+    }
+
+    .bottom-vector2 {
+        width: 90%;
+        bottom: -5.5%;
+        right: 12%;
+    }
+}

@@ -1,0 +1,125 @@
+.comp-four-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(-70deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 0.5%;
+        left: 0.5%;
+        width: 99%;
+        height: 99%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+
+        .slider-div {
+            width: 100%;
+            height: 100%;
+            padding: 5% 5%;
+            display: flex;
+            gap: 8.2%;
+
+            .slides {
+                min-width: 46%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 0.5vw;
+                transition: 1.5s;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // transform: translate(-118%);
+                // transform: translate(-236%);
+
+
+
+                p {
+                    position: absolute;
+                    font-size: 1.2vw;
+                    color: #fff;
+                    z-index: 1;
+                    text-shadow: 0.1vw 0.1vw 0.1vw #000;
+                }
+
+                img {
+                    width: 100%;
+                    height: 105%;
+                    object-fit: cover;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .before-div {
+        position: absolute;
+        width: 45vw;
+        height: 60vh;
+        background-image: linear-gradient(100deg, #E1FF01 30.56%, rgba(0, 0, 0, 0) 50.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+    }
+}
+
+
+
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .comp-four-main-container {
+        border-radius: 2vw;
+
+        .after-div {
+            top: 0.5%;
+            left: 0.5%;
+            width: 99%;
+            height: 99%;
+            border-radius: 2vw;
+
+            .slider-div {
+                padding: 8% 5%;
+
+                .slides {
+                    border-radius: 2vw;
+
+                    p {
+                        font-size: 3vw;
+                    }
+                }
+
+            }
+
+        }
+
+        .before-div {
+            width: 120vw;
+            height: 60vh;
+            background-image: linear-gradient(100deg, #E1FF01 30.56%, rgba(0, 0, 0, 0) 50.57%);
+            border-radius: 2vw;
+
+        }
+    }
+}

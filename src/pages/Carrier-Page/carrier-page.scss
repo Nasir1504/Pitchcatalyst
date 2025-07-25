@@ -1,0 +1,19 @@
+.carrier-page-main-container {
+    width: 100%;
+    position: relative;
+
+
+    .carrier-page-main {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+
+
+    }
+}

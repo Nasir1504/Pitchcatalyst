@@ -1,0 +1,45 @@
+.articles-and-blogs-comp-main-container {
+    width: 100%;
+    height: 58vw !important; 
+    position: relative;
+    z-index: 0;
+    // border: 1px solid #fff
+}
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .articles-and-blogs-comp-main-container {
+        height: 51.2vw !important; ;
+
+    }
+}
+
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .articles-and-blogs-comp-main-container {
+        height: 50.6vw !important; ;
+        // border: 1px solid #fff;
+
+    }
+}
+
+
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .articles-and-blogs-comp-main-container {
+        width: 100%;
+        height: 100vh !important;
+        // border: 1px solid #fff;
+
+    }
+
+}

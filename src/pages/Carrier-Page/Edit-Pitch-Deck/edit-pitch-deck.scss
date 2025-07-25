@@ -1,0 +1,131 @@
+.edit-pitch-deck-main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    transition: 2.2s ease-out;
+    transform: scale(0.9) rotate(-15deg) translate(-5vw, 100vh);
+
+    .card-div {
+        position: absolute;
+        width: 26%;
+        height: 20vw;
+        border-radius: 0.6vw;
+        // border: 1px solid #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+        transition: 0.8s ease-out;
+        cursor: pointer;
+
+        @keyframes strokeKF {
+            100% {
+                transform: rotate(-320deg);
+            }
+        }
+
+        &:hover {
+            .stroke-div {
+                animation: strokeKF 2.5s ease-in-out infinite;
+            }
+        }
+
+        .stroke-div {
+            position: absolute;
+            min-width: 40vw;
+            min-height: 40vw;
+            background: linear-gradient(180deg, #E1FF00 24.2%, #232323 45.85%);
+            z-index: 0;
+            border-radius: 0.6vw;
+            transform: rotate(45deg);
+
+        }
+
+        .card-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(23deg, #232323 7.91%, #232323 52.85%, #747474 115.07%, rgba(204, 204, 204, 0.00) 117.55%);
+            z-index: 1;
+            border-radius: 0.6vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .circle-div {
+                min-width: 5.6vw;
+                min-height: 5.6vw;
+                border-radius: 50%;
+                // border: 1.5px solid #e1ff00;
+                margin-top: 1.8vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 4.5%;
+                transition: 0.8s ease-out;
+
+                .inner-sec {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: #fff;
+                    border-radius: 50%;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+            }
+
+            .bottom-sec {
+                width: 100%;
+                height: 50%;
+                // background-color: #f5f;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 14%;
+
+                .card-name1 {
+                    color: #fff;
+                    font-size: 1.4vw;
+                    line-height: 1.2vw;
+                    text-align: center;
+                    font-weight: 500;
+                    transition: 0.8s ease-out;
+                    text-transform: uppercase;
+                    text-shadow: 0.2vw 0.2vw 2px #0000009d;
+                    margin-top: -6vh;
+
+                    em {
+                        font-size: 1.2vw;
+                        text-transform: capitalize;
+                        color: #E1FF00;
+                    }
+                }
+
+                .text-content {
+                    color: #ffffffaf;
+                    width: 90%;
+                    font-size: 0.9vw;
+                    font-weight: 300;
+                    text-align: center;
+                    transition: 0.8s ease-out;
+
+                    .span2 {
+                        opacity: 0.04;
+                        transition: 0.8s ease-out;
+
+                    }
+                }
+            }
+        }
+    }
+}

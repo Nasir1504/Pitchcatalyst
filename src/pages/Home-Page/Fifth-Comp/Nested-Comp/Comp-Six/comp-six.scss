@@ -1,0 +1,144 @@
+.comp-six-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(140deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 1%;
+        left: 0.5%;
+        width: 99%;
+        height: 98%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+        overflow: hidden;
+
+        h4 {
+            color: #fff;
+            font-size: 1.8vw;
+            font-weight: 400;
+            text-shadow: 0.2vw 0.2vw 1px #000;
+            padding-bottom: 1%;
+            border-bottom: 0.05vw solid #555;
+            width: 45%;
+            margin: 3% 0 0 5%;
+
+            span {
+                font-size: 0.8vw;
+                font-weight: 200;
+            }
+        }
+
+        p {
+            width: 45%;
+            margin: 8% 0 0 5%;
+            color: #fff;
+            font-size: 0.6vw;
+            font-weight: 100;
+
+        }
+
+        .graph-div {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 70%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            .mask-div {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0%;
+                top: 0;
+                overflow: hidden;
+                transition: 4s;
+
+                img {
+
+                    min-width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    mask-repeat: no-repeat;
+                }
+            }
+        }
+
+    }
+
+    .before-div {
+        position: absolute;
+        width: 30vw;
+        height: 80vh;
+        background-image: linear-gradient(120deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 50.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+
+    }
+}
+
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .comp-six-main-container {
+        border-radius: 2vw;
+
+        .after-div {
+            top: 1%;
+            left: 0.5%;
+            width: 99%;
+            height: 98%;
+            border-radius: 2vw;
+
+            h4 {
+                font-size: 4vw;
+                font-weight: 400;
+                width: 45%;
+                margin: 3% 0 0 5%;
+
+                span {
+                    font-size: 2.5vw;
+                    font-weight: 200;
+                }
+            }
+
+            p {
+                width: 55%;
+                margin: 5% 0 0 5%;
+                font-size: 2.2vw;
+                font-weight: 100;
+
+            }
+
+        }
+
+        .before-div {
+            width: 80vw;
+            height: 80vw;
+            background-image: linear-gradient(120deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 50.57%);
+            border-radius: 2vw;
+
+        }
+    }
+
+
+}

@@ -1,0 +1,224 @@
+.writing-category-comp-main-container {
+    width: 100%;
+    height: 58vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    // border: 1px solid #fff;
+    transition: ease-in-out 0.8s;
+    background-color: #E0FF00;
+    overflow: hidden;
+    z-index: 0;
+
+    @keyframes biggerHeadingKF {
+        0% {
+            transform: translate(100%);
+
+        }
+
+        100% {
+            transform: translate(-60%);
+
+        }
+
+    }
+
+    .bigger-heading {
+        min-width: 200%;
+        font-size: 18vw;
+        font-weight: 500;
+        transition: ease-in-out 2.8s;
+        transform: translate(100%);
+        z-index: 1;
+
+
+        span {
+            color: #fff;
+        }
+    }
+
+    .light-vector-img,
+    .dark-vector-img {
+        position: absolute;
+        width: 120%;
+        object-fit: contain;
+        z-index: 0;
+        transform: translate(60%, 45%) rotate(-90deg);
+        transition: ease-in-out 1.4s;
+    }
+
+    .light-vector-img {
+        opacity: 0;
+    }
+
+    .dark-vector-img {
+        opacity: 0;
+    }
+
+
+    @keyframes gwCardKF {
+        0% {
+            transform: translateY(120%);
+
+        }
+
+        100% {
+            transform: translateY(0%);
+
+        }
+
+    }
+
+    .gw-small-heading {
+        position: absolute;
+        left: 5.7%;
+        margin-top: -32%;
+        color: #000;
+        z-index: 1;
+        font-size: 1.4vw;
+        opacity: 0;
+        transition: 2s;
+        transform: translateY(200%);
+
+
+        span {
+            color: #fff;
+            text-shadow: 0.1vw 0.1vw 2px #333;
+        }
+    }
+
+    .more-caregory-small-heading {
+        position: absolute;
+        left: 5.7%;
+        margin-top: -32%;
+        color: #fff;
+        z-index: 1;
+        font-size: 1.4vw;
+        font-weight: 400;
+        opacity: 0;
+        transition: 2s;
+        text-shadow: 0.1vw 0.1vw 2px #333;
+    }
+
+    .card-slider-style {
+        position: absolute;
+        width: 100%;
+        margin-top: 10%;
+        height: 70%;
+        overflow: hidden;
+        transition: all ease-in-out 2s;
+        z-index: 0;
+
+
+    }
+
+    .gw-card-slider {
+        @extend .card-slider-style;
+        transform: translateY(120%);
+
+    }
+
+    .more-category-card-slider {
+        @extend .card-slider-style;
+
+    }
+
+
+}
+
+
+
+
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .writing-category-comp-main-container {
+        height: 51.2vw;
+
+    }
+}
+
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .writing-category-comp-main-container {
+        height: 50.6vw;
+        // border: 1px solid #fff;
+
+    }
+}
+
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .writing-category-comp-main-container {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        // opacity: 0;
+
+
+        .bigger-heading {
+            min-width: 200%;
+            font-size: 18vw;
+            font-weight: 500;
+
+        }
+
+        .light-vector-img,
+        .dark-vector-img {
+            position: absolute;
+            width: 120%;
+            object-fit: contain;
+            z-index: 0;
+            transform: translate(60%, 45%) rotate(-90deg);
+            transition: ease-in-out 1.4s;
+        }
+
+        .light-vector-img {
+            opacity: 0;
+        }
+
+        .dark-vector-img {
+            opacity: 0;
+        }
+
+        .gw-small-heading {
+            margin-top: 0%;
+            top: 25%;
+            font-size: 5vw;
+
+        }
+
+        .more-caregory-small-heading {
+            margin-top: 0%;
+            top: 25%;
+            font-size: 5vw;
+        }
+
+        .card-slider-style {
+            position: absolute;
+            width: 100%;
+            margin-top: 0%;
+            top: 30%;
+            height: 60%;
+            // border: 1px solid black;
+            overflow: hidden;
+            // z-index: 0;
+            // opacity: 0;
+
+        }
+
+
+    }
+
+}

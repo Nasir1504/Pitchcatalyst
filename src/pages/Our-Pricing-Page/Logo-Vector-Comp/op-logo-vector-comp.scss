@@ -1,0 +1,77 @@
+.logo-vector-comp-main-container {
+    position: absolute;
+    width: 50vw;
+    height: 20vw;
+    // background-color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transform: translate(0%, 100vh);
+    // transform: translateY(37.5%);
+    // transition: ease-in-out 20.5s;
+
+    img {
+        transition: 0.2s;
+    }
+
+    .part-one {
+        object-fit: contain;
+        pointer-events: none;
+
+    }
+
+    .part-two {
+        object-fit: contain;
+        pointer-events: none;
+
+    }
+
+    .part-three {
+        object-fit: contain;
+        pointer-events: none;
+
+    }
+
+    .part-four {
+        object-fit: contain;
+        pointer-events: none;
+
+    }
+
+
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .logo-vector-comp-main-container {
+        width: 50vw;
+        height: 40vw;
+        z-index: 1;
+        transform: translate(0%, 100vh) rotate(90deg);
+
+
+        img {
+            transition: 0.5s;
+        }
+
+        .part-one {
+            object-fit: contain;
+        }
+
+        .part-two {
+            object-fit: contain;
+        }
+
+        .part-three {
+            object-fit: contain;
+        }
+
+        .part-four {
+            object-fit: contain;
+        }
+
+    }
+}

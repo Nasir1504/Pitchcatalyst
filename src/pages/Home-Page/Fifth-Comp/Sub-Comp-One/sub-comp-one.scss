@@ -1,0 +1,231 @@
+.sub-comp-one-main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .dummy-comp-one {
+        position: absolute;
+        transition: all 1.9s;
+        width: 100%;
+        height: 100%;
+        width: 19vw;
+        height: 20vh;
+        left: -16%;
+        top: 30%;
+    }
+
+    .dummy-comp-two {
+        position: absolute;
+        transition: all 1.8s;
+        width: 19vw;
+        height: 43vh;
+        left: -15%;
+        top: 58%;
+
+    }
+
+    .content-div {
+        position: absolute;
+        top: 14%;
+        left: 100%;
+        // border: 1px solid #fff;
+        z-index: 2;
+        overflow: hidden;
+        padding: 0 2% 0.8% 2%;
+        border-bottom: 0.1vw solid #7E7E7E;
+        transition: ease-in-out 1.2s;
+
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            color: #E1FF00;
+            font-size: 1.2vw;
+            font-weight: 400;
+            margin-bottom: 4%;
+
+            span {
+                width: 4vw;
+                height: 2vw;
+
+                img {
+                    margin-left: -2%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .analytics-heading {
+            color: #fff;
+            font-weight: 500;
+            font-size: 2.4vw;
+            text-shadow: 0.3vw 0.2vw 0.3vw #000;
+            // transition: all ease-in-out 2s;
+
+            span {
+                color: #E1FF00;
+            }
+        }
+    }
+
+    .comp-one-div {
+        position: absolute;
+        transition: all ease-in-out 1.8s;
+        width: 18vw;
+        // height: 40vh;
+        height: 21vw;
+        left: 10%;
+        top: 34%;
+        // map
+
+    }
+
+
+    .comp-two-div {
+        width: 18vw;
+        // height: 8vh;
+        height: 4.26vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 10%;
+        top: 82%;
+        //SLIDE DURATION
+
+    }
+
+    .comp-three-div {
+        width: 22vw;
+        // height: 38vh;
+        height: 18vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 35%;
+        top: 44%;
+        // Calander
+
+    }
+
+
+
+    .comp-four-div {
+        width: 18vw;
+        // height: 32vh;
+        height: 17.1vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 65%;
+        top: 47%;
+        // Cities
+
+
+    }
+
+    .comp-five-div {
+        width: 19vw;
+        // height: 8vh;
+        height: 4.26vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 67%;
+        top: 30%;
+        // Time Duration
+
+    }
+
+    .comp-six-div {
+        width: 19vw;
+        // height: 20vh;
+        height: 10.7vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 96%;
+        top: 32%;
+        //Graph
+
+
+
+    }
+
+    .comp-seven-div {
+        width: 19vw;
+        // height: 8vh;
+        height: 4.26vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 94%;
+        top: 80%;
+
+
+    }
+
+    .comp-eight-div {
+        width: 19vw;
+        // height: 43vh;
+        height: 22.5vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 120%;
+        top: 40%;
+        //Heat Map
+
+
+    }
+
+    .comp-nine-div {
+        width: 18vw;
+        // height: 48vh;
+        height: 25.5vw;
+        transition: all ease-in-out 1.8s;
+        position: absolute;
+        left: 120%;
+        top: 34%;
+        //Poll Option
+
+    }
+
+    .comp-ten-div {
+        width: 20vw;
+        // height: 10vh;
+        height: 5.4vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 120%;
+        top: 35%;
+        //Subscribe
+
+
+    }
+
+    .comp-eleven-div {
+        width: 16vw;
+        // height: 40vh;
+        height: 21.4vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 120%;
+        top: 45%;
+        //Insights
+
+    }
+
+    .comp-twelve-div {
+        width: 18vw;
+        // height: 40vh;
+        height: 21.4vw;
+        transition: all ease-in-out 1.4s;
+        position: absolute;
+        left: 120%;
+        top: 58%;
+        //Insights
+
+
+    }
+}

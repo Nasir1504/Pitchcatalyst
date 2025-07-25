@@ -1,0 +1,90 @@
+.logo-vector-comp-main-container {
+    position: absolute;
+    width: 50vw;
+    height: 20vw;
+    // background-color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    // transform: translate(-150%, -37.5%) rotate(-90deg);
+    // transform: translate(-95%, 13.4vh);
+    // transform: translateY(37.5%);
+    transition: ease-in-out 1.5s;
+    // border: 1px solid #000fff;
+
+    .inner-part {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid #000;
+
+        img {
+            transition: 0.5s;
+            height: 100%;
+        }
+
+        .part-one {
+            object-fit: contain;
+        }
+
+        .part-two {
+            object-fit: contain;
+        }
+
+        .part-three {
+            object-fit: contain;
+        }
+
+        .part-four {
+            object-fit: contain;
+        }
+
+        // .bottom-part {
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0.55%;
+        //     width: 100%;
+        //     height: 100%;
+        //     overflow: hidden;
+        //     transition: ease-in-out 2.5s;
+        //     // background-color: #fff;
+
+        //     img {
+        //         position: absolute;
+        //         top: -100%;
+        //         left: 10.5%;
+        //         // width: 81%;
+        //         min-height: 100%;
+        //         object-fit: contain;
+        //         z-index: 0;
+        //         transition: ease-in-out 2.5s;
+
+        //     }
+
+        // }
+
+
+          .black-logo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid #000;
+            // opacity: 0;
+
+            .logo-img {
+                position: absolute;
+                clip: rect(0vw, 50vw, 20vw, 0vw);
+                height: 100%;
+                object-fit: contain;
+                transition: ease-in-out 1.5s;
+            }
+        }
+    }
+}

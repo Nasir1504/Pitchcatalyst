@@ -1,0 +1,202 @@
+.op-comp-three-main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: #6;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    opacity: 0;
+
+    .lamp-white-img {
+        position: absolute;
+        top: -28.5%;
+        height: 130%;
+        width: 100%;
+        object-fit: contain;
+        opacity: 0;
+        transition: 0.6s ease-in-out;
+    }
+
+    .pitch-power-heading {
+        position: absolute;
+        top: 80%;
+        text-align: center;
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.8vw;
+        line-height: 2vw;
+        text-shadow: 0.2vw 0.2vw 2px #000;
+        transition: 1.5s ease-out;
+
+        span {
+            color: #e1ff00;
+            font-weight: 600;
+            font-size: 2.5vw;
+
+        }
+    }
+
+    .chat-with-us-div {
+        position: absolute;
+        width: 35vw;
+        height: 20vw;
+        // border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s ease-out;
+
+       .heading {
+            color: #e1ff00;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+            font-size: 4vw;
+            font-weight: 600;
+
+            span {
+                color: #fff;
+                font-size: 2vw;
+                font-weight: 400;
+            }
+
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 300;
+            text-transform: capitalize;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+
+        }
+    }
+
+    .contact-us-btn {
+        width: 10vw;
+        height: 3vw;
+        margin-top: 5%;
+        border-radius: 500px;
+        background: linear-gradient(360deg, #E1FF00 10%, rgba(0, 0, 0, 0.90) 30%);
+        padding: 0 1px 1px 1px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        // z-index: 10;
+
+
+        &::after {
+            position: relative;
+            z-index: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 500px;
+            background-color: #000;
+
+
+        }
+
+        .inner-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 500px;
+            background: linear-gradient(180deg, #1C1C1C 0%, rgba(21, 21, 21, 0.57) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link-tag {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 400;
+                text-shadow: 0.2vw 0.2vw 2px #000;
+                font-size: 1.1vw;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .op-comp-three-main-container {
+
+        .lamp-white-img {
+            top: -22vh;
+            height: 150%;
+            width: 150%;
+        }
+
+        .pitch-power-heading {
+            top: 80%;
+            font-size: 4vw;
+            line-height: 5.5vw;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+
+            span {
+                font-weight: 600;
+                font-size: 7vw;
+
+            }
+        }
+
+        .chat-with-us-div {
+            width: 60vw;
+            height: 40vw;
+
+            h1 {
+                text-shadow: 0.4vw 0.4vw 2px #000;
+                font-size: 10vw;
+
+                span {
+                    font-size: 5vw;
+                    font-weight: 400;
+                }
+
+            }
+
+            p {
+                font-size: 2.5vw;
+                font-weight: 300;
+                text-shadow: 0.2vw 0.2vw 2px #000;
+
+            }
+        }
+
+        .contact-us-btn {
+            width: 30vw;
+            height: 8vw;
+            margin-top: 15%;
+            border-radius: 500px;
+
+            .inner-div {
+                .link-tag {
+                    font-size: 3.1vw;
+                }
+            }
+        }
+
+    }
+}

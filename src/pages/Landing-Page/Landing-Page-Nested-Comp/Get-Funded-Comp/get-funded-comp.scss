@@ -1,0 +1,245 @@
+.get-funded-comp-main-container {
+    width: 100%;
+    height: 58vw;
+    // border: 1px solid #fff;
+    background-color: #e1ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    .get-funded-heading {
+        width: 50%;
+        height: 18vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        margin-left: -5%;
+        margin-top: -30vw;
+
+
+        img {
+            width: 65%;
+            object-fit: contain;
+        }
+
+        span {
+            position: absolute;
+            right: 0;
+            color: #000;
+            letter-spacing: -0.1vw;
+            margin-bottom: -14%;
+            font-size: 4vw;
+        }
+
+        .shape-div {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 90%;
+            height: 5%;
+            border-radius: 50%;
+            background-color: #000;
+            // filter: blur(1px);
+            box-shadow: 0 0.2vw 5px #000;
+        }
+    }
+
+    .icons-section {
+        position: absolute;
+        width: 60%;
+        height: 12vw;
+        margin-top: 6vw;
+        // border: 1px solid #000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .icons1-div,
+        .icons2-div,
+        .icons3-div {
+            width: 40%;
+            height: 90%;
+            // border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 1.4vw;
+            color: #000;
+            font-weight: 600;
+
+            img {
+                width: 25%;
+                object-fit: contain;
+            }
+        }
+
+        .icons1-div {
+            span {
+                background: linear-gradient(181deg, #3B3B3B 0%, #191919 10%, rgba(134, 134, 134, 0.76) 120%);
+                color: #fff;
+                font-weight: 500;
+                border-radius: 50px;
+                padding: 0.1em 0.6em;
+                line-height: 2vw;
+                box-shadow: 0vw 0.1vw 2px rgba(0, 0, 0, 0.8);
+
+            }
+        }
+
+        .icons2-div {
+            text-align: center;
+            font-weight: 400;
+
+            span {
+                letter-spacing: 0.45vw;
+                font-weight: 600;
+                border-radius: 50px;
+                padding: 0.05em 0.6em;
+                line-height: 1.5vw;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                box-shadow: 0vw 0.2vw 2px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .icons3-div {
+
+            span {
+                color: #fff;
+            }
+
+            .span1 {
+                background: linear-gradient(181deg, #3B3B3B 0%, #191919 10%, rgba(134, 134, 134, 0.76) 120%);
+                color: #fff;
+                font-weight: 500;
+                border-radius: 50px;
+                padding: 0.1em 0.4em;
+                text-align: center;
+                line-height: 2vw;
+                box-shadow: 0vw 0.1vw 1px rgba(0, 0, 0, 0.8);
+            }
+
+            // .span2 {
+            //     text-shadow: 0vw 0.1vw 2px rgba(0, 0, 0, 0.6);
+            // }
+        }
+
+    }
+
+    .bottom-para {
+        position: absolute;
+        width: 70%;
+        height: 10vw;
+        // border: 1px solid #000;
+        margin-top: 34vw;
+        font-size: 1.4vw;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 2vw 5vw;
+
+    }
+}
+
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .get-funded-comp-main-container {
+        height: 51.2vw;
+    }
+}
+
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .get-funded-comp-main-container {
+        height: 50.6vw;
+    }
+}
+
+//=====================================================================================
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .get-funded-comp-main-container {
+        height: 40vh;
+
+
+        .get-funded-heading {
+            width: 70%;
+            height: 10vh;
+            margin-left: -5%;
+            margin-top: -50vw;
+
+
+            img {
+                width: 70%;
+                object-fit: contain;
+            }
+
+            span {
+                letter-spacing: -0.1vw;
+                margin-bottom: -14%;
+                font-size: 5.2vw;
+            }
+
+        }
+
+        .icons-section {
+            width: 80%;
+            height: 10vh;
+            margin-top: 6vw;
+            // border: 1px solid #000;
+
+            .icons1-div,
+            .icons2-div,
+            .icons3-div {
+                // border: 1px solid #000;
+                font-size: 1.8vw;
+
+                img {
+                    width: 35%;
+                }
+            }
+
+            .icons1-div {
+                span {
+                    line-height: 2.8vw;
+
+                }
+            }
+
+            .icons2-div {
+                span {
+                    letter-spacing: 0.45vw;
+                    line-height: 2.8vw;
+                }
+            }
+
+            .icons3-div {
+                .span1 {
+                    line-height: 2.8vw;
+                }
+            }
+
+        }
+
+        .bottom-para {
+            position: absolute;
+            width: 90%;
+            height: 10vw;
+            // border: 1px solid #000;
+            margin-top: 42vw;
+            font-size: 2.6vw;
+            font-weight: 600;
+            text-transform: capitalize;
+            padding: 2vw 5vw;
+
+        }
+    }
+
+}

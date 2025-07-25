@@ -1,0 +1,124 @@
+.about-us-page-main-container {
+    background-color: #000;
+    transition: all ease 1.5s;
+
+    .scroll-down-text-div {
+        position: absolute;
+        bottom: 5%;
+        width: 25%;
+        height: 6%;
+        // border: 1px solid #fff;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        transition: 0.8s;
+        z-index: 3;
+        left: 37.5%;
+        color: #fff;
+
+        @keyframes scrollDown {
+            0% {
+                margin-top: -2%;
+            }
+
+            100% {
+                margin-top: 2%;
+            }
+        }
+
+
+        .para {
+            width: 100%;
+            height: 100%;
+            font-size: 1.2vw;
+            color: #e1ff00;
+            font-weight: 400;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            // animation: scrollDown 1.2s ease-in-out infinite;
+
+            span {
+                position: absolute;
+                font-size: 2vw;
+                transition: 0.5s;
+                margin-left: 2%;
+                animation: scrollDown 1.2s ease-in-out infinite;
+                // margin-top: 10%;
+
+            }
+
+            .mouse-span {
+                position: absolute;
+                right: 20%;
+                top: -20%;
+                width: 7%;
+                height: 80%;
+                border-radius: 100px;
+                border: 2px solid #e1ff00;
+                // background-color: #fff;
+                animation: none;
+                display: flex;
+                justify-content: center;
+                box-shadow: inset 0vw 0vw 5px #fff;
+
+
+                .wheel-span {
+                    width: 0.2vw;
+                    height: 25%;
+                    border-radius: 100px;
+                    margin-top: 20%;
+                    background-color: #fff;
+                    animation: none;
+
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .about-us-page-main-container {
+        .scroll-down-text-div {
+            position: absolute;
+            bottom: 10%;
+            width: 45%;
+            height: 8vw;
+            left: 22%;
+
+            .para {
+                font-size: 3.2vw;
+
+                span {
+                    font-size: 6vw;
+                    transition: 0.5s;
+                    margin-left: 2%;
+                    animation: scrollDown 1.2s ease-in-out infinite;
+
+                }
+
+                .mouse-span {
+                    right: 5%;
+                    top: -20%;
+                    width: 10%;
+                    height: 80%;
+
+                    .wheel-span {
+                        width: 0.4vw;
+                        height: 25%;
+                        margin-top: 20%;
+
+                    }
+                }
+            }
+        }
+    }
+}

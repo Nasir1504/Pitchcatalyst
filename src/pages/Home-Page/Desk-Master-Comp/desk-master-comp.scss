@@ -1,0 +1,298 @@
+.desk-master-comp-main-container {
+    width: 100%;
+    height: 58vw;
+    background-color: #000;
+    // border: 1px solid #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-one {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        background-color: #e1ff00;
+        padding: 2px 5px;
+        color: #000;
+
+    }
+
+    .btn-onLoad {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        background-color: #e1ff00;
+        padding: 2px 5px;
+        color: #000;
+    }
+
+    .btn-two {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        background-color: #e1ff00;
+        padding: 2px 5px;
+        color: #000;
+    }
+
+    .btn-three {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        background-color: #e1ff00;
+        padding: 2px 5px;
+        color: #000;
+    }
+
+    .deck-master-heading {
+        position: relative;
+        width: 30%;
+        // border: 1px solid #fff;
+        color: #fff;
+        text-align: left;
+        font-size: 2.5vw;
+        font-weight: 500;
+        margin-left: 10%;
+        line-height: 2.6vw;
+        overflow: hidden;
+        transition: ease-out 1.2s;
+
+
+        span {
+            color: #e1ff00;
+        }
+
+        .blank-div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            transition: ease-in-out 0.8s;
+        }
+
+    }
+
+    .dynamic-deck-begins-div {
+        width: 60%;
+        height: 100%;
+        // border: 1px solid #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-out 1.2s;
+
+        .lamp1-img,
+        .lamp2-img {
+            position: absolute;
+            top: 10%;
+            width: 70%;
+            margin-left: 4%;
+            object-fit: contain;
+            transform: scale(-1);
+            z-index: 1;
+            transition: ease-in-out 0.4s;
+            opacity: 0;
+
+        }
+
+        .mockup-div {
+            position: absolute;
+            width: 30vw;
+            height: 20vw;
+            margin-left: 4.4%;
+            // border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            opacity: 0;
+            transition: ease-out 1.5s;
+
+            .after-div {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 3;
+                // background-color: #fff;
+            }
+
+            img {
+                position: absolute;
+                z-index: 1;
+                transition: ease-out 1.5s;
+                object-fit: contain;
+
+            }
+
+            .mockup-img {
+                width: 100%;
+            }
+
+            .mockup1-img {
+                width: 100%;
+                transform: translateY(100vh);
+            }
+
+            .mockup2-img {
+                width: 100%;
+                transform: translateY(100vh);
+
+            }
+
+            .analytics-heading {
+                position: absolute;
+                color: #fff;
+                font-size: 5vw;
+                z-index: 0;
+                font-weight: 300;
+                margin-bottom: -10vw;
+                transition: ease-out 1.5s;
+                opacity: 0;
+
+                span {
+                    color: #e1ff00;
+                }
+
+            }
+
+            .mockup3-img {
+                width: 80%;
+                transform: translateY(100vh);
+
+            }
+
+            .mockup4-img {
+                width: 80%;
+                transform: translateY(100vh);
+
+            }
+
+
+
+
+            .card-container {
+                position: absolute;
+                width: 80%;
+                height: 80%;
+                margin-top: -5%;
+                transition: ease-out 0.2s;
+                padding: 0 5%;
+                z-index: 2;
+
+
+                &:hover {
+                    transform: scale(1.4) translateY(-5%);
+                }
+
+                .card-div {
+                    position: absolute;
+                    width: 4.5vw;
+                    height: 5.5vw;
+                    // border: 1px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    transition: ease-out 0.2s;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        p {
+            position: absolute;
+            margin-left: 4%;
+            color: #fff;
+            z-index: 1;
+            bottom: 20%;
+            text-align: center;
+            font-size: 1.4vw;
+            font-weight: 300;
+            text-shadow: 0px 1px 2px #000;
+            transform: translateY(-65vh);
+            opacity: 0;
+            transition: ease-out 1.5s;
+            z-index: 0;
+
+
+            b {
+                font-weight: 500;
+
+                span {
+                    color: #e1ff00;
+                }
+            }
+        }
+
+        .stage-img {
+            position: absolute;
+            width: 80%;
+            margin-left: 4%;
+            bottom: -12%;
+            object-fit: contain;
+            z-index: 0;
+        }
+
+
+    }
+
+    .verticle-bar {
+        position: absolute;
+        right: 5%;
+        width: 5vw;
+        height: 60%;
+        // border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0.1vw 0.1vw 2px #000);
+        opacity: 0;
+        transition: ease-in-out 0.5s;
+
+
+        .top-circle-div {
+            margin-top: -0.7vw;
+            width: 0.8vw;
+            height: 0.8vw;
+            transform: rotate(45deg);
+            border-radius: 0.5vh;
+            background-color: #e1ff00;
+        }
+
+        .loading-bar {
+            width: 0.2vw;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .padding-bar {
+            position: absolute;
+            top: 0;
+            width: 0.2vw;
+            height: 5%;
+            background-color: #e1ff00;
+            box-shadow: 0px 0.2vw 2px #000;
+        }
+
+        .bottom-circle-div {
+            margin-bottom: -0.7vw;
+            width: 0.8vw;
+            height: 0.8vw;
+            transform: rotate(45deg);
+            border-radius: 0.5vh;
+            background-color: #fff;
+        }
+
+        .logo-vector-img {
+            position: absolute;
+            width: 100%;
+            object-fit: contain;
+            transition: ease-out 1.5s;
+
+        }
+    }
+
+}

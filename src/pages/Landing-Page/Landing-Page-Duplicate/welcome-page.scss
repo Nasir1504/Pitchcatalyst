@@ -1,0 +1,750 @@
+.landing-page-main-page {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+
+
+    .frame-contant-div {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        // background-color: yellowgreen;
+        z-index: 11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .cross-btn {
+            position: absolute;
+            z-index: 3;
+            top: 10%;
+            right: 15%;
+            font-size: 1.4vw;
+            // background-color: #888;
+            color: #999;
+            font-weight: 300;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #iframe-calendly {
+            // opacity: 0;
+            position: absolute;
+            margin-top: 2%;
+            width: 60%;
+            height: 80%;
+            border-radius: 1vw;
+            border: none;
+            box-shadow: 0.8vw 0.8vw 1px #000;
+            background-color: #000;
+
+
+        }
+    }
+
+
+    .nav-bar-container {
+        position: fixed;
+        width: 100%;
+        height: 4vw;
+        background-color: #000;
+        z-index: 10;
+        gap: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding-right: 1%;
+        overflow: hidden;
+
+        .nav-bar-logo-img {
+            position: absolute;
+            left: 2%;
+            width: 12%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        div,
+        .link-tag {
+            text-transform: uppercase;
+            font-size: 0.8vw;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+
+        }
+
+
+        @keyframes whatsappIconKF {
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        // .whatsapp-div {
+        //     position: absolute;
+        //     width: 2.6vw;
+        //     height: 2.6vw;
+        //     border-radius: 50%;
+        //     opacity: 0.8;
+        //     background-color: #000;
+        //     right: 2%;
+        //     top: 90vh;
+        //     overflow: hidden;
+        //     padding: 1px;
+        //     cursor: pointer;
+        //     transition: ease-in-out 0.2s;
+
+        //     &::after {
+        //         content: '';
+        //         position: absolute;
+        //         width: 100%;
+        //         height: 100%;
+        //         top: 0;
+        //         left: 0;
+        //         background: linear-gradient(224deg, #DEFC01 20.81%, #000 48.73%);
+        //         z-index: 0;
+
+        //         // animation: whatsappIconKF 2s ease-in-out infinite alternate;
+        //     }
+
+        //     &:hover {
+        //         transform: scale(1.2);
+
+        //         &::after {
+        //             animation: whatsappIconKF 1.2s ease-out infinite;
+        //         }
+        //     }
+
+        //     .inner-div {
+        //         position: relative;
+        //         z-index: 1;
+        //         width: 100%;
+        //         height: 100%;
+        //         border-radius: 50%;
+        //         background-color: #000;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+
+        //         a {
+        //             width: 100%;
+        //             height: 100%;
+        //             display: flex;
+        //             justify-content: center;
+        //             align-items: center;
+
+        //             .whatsapp-icon {
+        //                 margin-left: 14%;
+        //                 width: 70%;
+        //                 object-fit: contain;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+
+    .lp-contact-us-comp {
+        width: 100%;
+        height: 58vw;
+        position: relative;
+        overflow: hidden;
+        // border: 1px solid white;
+
+    }
+
+    .hr-line {
+        width: 100%;
+        height: 0.1vw;
+        background: linear-gradient(90.06deg, #E1FF00 0%, rgba(222, 251, 6, 0) 141.63%, rgba(0, 0, 0, 0) 211.45%);
+        border: none;
+        transform: scale(-1);
+        margin-top: -2%;
+    }
+
+    .services-section {
+        width: 100%;
+        height: 76vw;
+    }
+
+    .our-features-section {
+        width: 100%;
+        height: 100vw;
+        background-color: #e1ff00;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .top-heading {
+            color: #000;
+            text-align: center;
+            font-size: 3vw;
+            line-height: 3vw;
+            font-weight: 400;
+            margin-top: -5%;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+
+        .card-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            // background-color: #000;
+            gap: 5%;
+
+            .top-container {
+                position: relative;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 40vw;
+                // border: 1px solid #fff;
+            }
+
+            .bottom-container {
+                position: relative;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 40vw;
+            }
+
+        }
+
+
+
+        .our-features-img {
+            position: absolute;
+            width: 120%;
+            object-fit: contain;
+            z-index: 0;
+
+        }
+    }
+
+    .static-vs-interactive-deck-div {
+        width: 100%;
+        height: 58vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid #fff;
+        overflow: hidden;
+        position: relative;
+
+        .static-vs-interactive-heading {
+            position: absolute;
+            top: 12%;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2vw;
+
+
+            span {
+                background-color: #e1ff00;
+                border-radius: 50%;
+                padding: 0.2em;
+                font-weight: 600;
+                text-shadow: 0 0.1vw 1px rgba(0, 0, 0, 0.8);
+            }
+
+            b {
+                font-weight: 600;
+                color: #e1ff00;
+            }
+        }
+
+        .bg-blured-circle {
+            position: absolute;
+            width: 35vw;
+            height: 35vw;
+            opacity: 0.3;
+            filter: blur(150px);
+            border-radius: 50%;
+            background-color: #e1ff00;
+        }
+
+        .card-one-div {
+            position: absolute;
+            width: 50%;
+            height: 35vw;
+            // border: 1px solid #fff;
+            // background-color: #000;
+            border-radius: 1vw;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            transform: translateY(100vh);
+            transition: ease-in-out 1s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                pointer-events: none;
+            }
+        }
+
+        .card-two-div {
+            position: absolute;
+            width: 50%;
+            height: 34vw;
+            // border: 1px solid #fff;
+            // background-color: #000;
+            border-radius: 1vw;
+            margin-top: 8%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            transform: translateY(100vh);
+            transition: ease-in-out 1s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .packages-section {
+        width: 100%;
+        height: 75vw;
+        padding-top: 10%;
+        // border: 1px solid #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+
+
+        .lamp-img {
+            position: absolute;
+            width: 55%;
+            height: 92%;
+            object-fit: contain;
+            top: 8%;
+            transform: scale(-1.5, -1);
+        }
+
+        .packages-heading {
+            position: absolute;
+            top: 2%;
+            font-size: 3vw;
+            font-weight: 500;
+            filter: drop-shadow(0px 0.4vw 2px #000);
+            background: linear-gradient(180deg, #E1FF00 0%, rgba(10, 10, 10, 0.43) 110%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 1;
+        }
+
+    }
+
+    .contact-us-btn-div {
+        width: 100%;
+        height: 10vw;
+        // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+        .contact-us-btn,
+        .schedule-call-btn {
+            width: 14vw;
+            height: 2.8vw;
+            border-radius: 500px;
+            background: linear-gradient(360deg, #E1FF00 10%, rgba(0, 0, 0, 0.90) 30%);
+            padding: 0 1px 1px 1px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            // z-index: 10;
+            text-transform: uppercase;
+
+            &::after {
+                position: relative;
+                z-index: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 500px;
+                background-color: #000;
+
+
+            }
+
+            .inner-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                border-radius: 500px;
+                background: linear-gradient(180deg, #1C1C1C 0%, rgba(21, 21, 21, 0.57) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+
+                .link-tag {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 500;
+                    text-shadow: 0.2vw 0.2vw 2px #000;
+                    font-size: 1.2vw;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: 0.2s;
+
+
+                    &:hover {
+                        color: #E1FF00;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .landing-page-main-page {
+
+        .nav-bar-container {
+            .whatsapp-div {
+                width: 2.6vw;
+                height: 2.6vw;
+            }
+        }
+
+        .lp-contact-us-comp {
+            height: 51.2vw;
+
+        }
+
+        .static-vs-interactive-deck-div {
+            height: 51.2vw;
+        }
+
+
+
+    }
+}
+
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .landing-page-main-page {
+
+
+
+        .lp-contact-us-comp {
+            height: 50.6vw;
+
+        }
+
+        .static-vs-interactive-deck-div {
+            height: 50.6vw;
+        }
+
+
+    }
+}
+
+
+//=====================================================================================
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .landing-page-main-page {
+        width: 100%;
+        height: auto;
+        background-color: #000;
+
+        .frame-contant-div {
+            width: 100%;
+            height: 100%;
+
+            .cross-btn {
+                top: 8%;
+                right: 5%;
+                font-size: 5vw;
+
+            }
+
+            #iframe-calendly {
+                margin-top: 2%;
+                width: 80%;
+                height: 75%;
+                border-radius: 1vw;
+                border: none;
+                box-shadow: 0.8vw 0.8vw 1px #000;
+                background-color: #000;
+
+
+            }
+        }
+
+        .nav-bar-container {
+            height: 5vh;
+
+            .nav-bar-logo-img {
+                width: 28.5%;
+            }
+
+            div {
+                font-size: 1.32vw;
+                font-weight: 500;
+            }
+
+            .whatsapp-div {
+                width: 8.5vw;
+                height: 8.5vw;
+            }
+        }
+
+        .lp-contact-us-comp {
+            width: 100%;
+            height: 100vh;
+
+        }
+
+
+        .services-section {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .our-features-section {
+            width: 100%;
+            height: 140vh;
+
+            .top-heading {
+                top: 4%;
+                position: absolute;
+                color: #000;
+                text-align: center;
+                font-size: 6vw;
+                line-height: 6vw;
+                font-weight: 400;
+
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+            .card-container {
+                gap: 0%;
+
+            }
+
+
+            .card-container {
+                width: 100%;
+                // height: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                // background-color: #000;
+                // gap: 5%;
+
+                .top-container {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+                    height: 120vh;
+                    // border: 1px solid #fff;
+                    gap: 2.5%;
+                    border-radius: 1vw;
+                    margin-top: 20%;
+
+
+                }
+
+                .bottom-container {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 100%;
+                    height: 120vh;
+                    gap: 2.5%;
+                    border-radius: 2vw;
+                    margin-top: 20%;
+
+                }
+
+            }
+
+        }
+
+        .static-vs-interactive-deck-div {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid #fff;
+            overflow: hidden;
+            position: relative;
+
+            .static-vs-interactive-heading {
+                font-size: 6vw;
+
+            }
+
+            .bg-blured-circle {
+                position: absolute;
+                width: 50vw;
+                height: 50vw;
+                opacity: 0.5;
+                filter: blur(100px);
+                border-radius: 50%;
+                background-color: #e1ff00;
+            }
+
+            .card-one-div {
+                position: absolute;
+                width: 70%;
+                height: 105vw;
+                // border: 1px solid #fff;
+                // background-color: #000;
+                border-radius: 1vw;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                transform: translateY(100vh);
+                transition: ease-in-out 1s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .card-two-div {
+                position: absolute;
+                width: 70%;
+                height: 105vw;
+                // border: 1px solid #fff;
+                // background-color: #000;
+                border-radius: 1vw;
+                margin-top: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                transform: translateY(100vh);
+                transition: ease-in-out 1s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .packages-section {
+            width: 100%;
+            height: 220vh;
+            padding-top: 10%;
+            position: relative;
+            display: flex;
+            gap: 2%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+
+            .packages-heading {
+                position: absolute;
+                top: 2%;
+                font-size: 10vw;
+                font-weight: 500;
+                filter: drop-shadow(0px 0.4vw 2px #000);
+                background: linear-gradient(180deg, #E1FF00 0%, rgba(10, 10, 10, 0.43) 120%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                z-index: 1;
+            }
+
+            .lamp-img {
+                position: absolute;
+                width: 150%;
+                display: none;
+                // border: 1px solid #fff;
+                top: 56vh;
+                transform: scale(-1, -1);
+            }
+        }
+
+        .contact-us-btn-div {
+            height: 18vh;
+            // border: 1px solid #fff;
+
+            .contact-us-btn,
+            .schedule-call-btn {
+                width: 36vw;
+                height: 8vw;
+
+                .inner-div {
+                    .link-tag {
+                        font-size: 3.2vw;
+
+                    }
+                }
+            }
+        }
+    }
+}

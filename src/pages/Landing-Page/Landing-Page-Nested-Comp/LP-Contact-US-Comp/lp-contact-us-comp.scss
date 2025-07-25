@@ -1,0 +1,283 @@
+.lp-contact-us-comp-main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    opacity: 0;
+    // background-color: #fff;
+
+    .frame-contant-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        // background-color: yellowgreen;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .cross-btn {
+            position: absolute;
+            z-index: 3;
+            top: 10%;
+            right: 15%;
+            font-size: 1.4vw;
+            // background-color: #888;
+            color: #999;
+            font-weight: 300;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #iframe-calendly {
+            // opacity: 0;
+            position: absolute;
+            margin-top: 2%;
+            width: 60%;
+            height: 80%;
+            border-radius: 1vw;
+            border: none;
+            box-shadow: 0.8vw 0.8vw 1px #000;
+            background-color: #000;
+
+
+        }
+    }
+
+    .lamp-white-img {
+        position: absolute;
+        top: -28.5%;
+        height: 130%;
+        width: 100%;
+        object-fit: contain;
+        opacity: 0;
+        transition: 0.6s ease-in-out;
+    }
+
+    .pitch-power-heading {
+        position: absolute;
+        top: 80%;
+        text-align: center;
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.8vw;
+        line-height: 2vw;
+        text-shadow: 0.2vw 0.2vw 2px #000;
+        transition: 1.5s ease-out;
+
+        span {
+            color: #e1ff00;
+            font-weight: 600;
+            font-size: 2.5vw;
+
+        }
+    }
+
+    .chat-with-us-div {
+        position: absolute;
+        width: 35vw;
+        height: 20vw;
+        // border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s ease-out;
+
+        .heading {
+            color: #e1ff00;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+            font-size: 4vw;
+            font-weight: 600;
+
+            span {
+                color: #fff;
+                font-size: 2vw;
+                font-weight: 400;
+            }
+
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 300;
+            text-transform: capitalize;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+
+        }
+    }
+
+    .btn-div {
+        display: flex;
+        gap: 10%;
+        margin-top: 5%;
+
+        .contact-us-btn,
+        .schedule-call-btn {
+            width: 12vw;
+            height: 2.2vw;
+            margin-top: 5%;
+            border-radius: 500px;
+            background: linear-gradient(360deg, #E1FF00 10%, rgba(0, 0, 0, 0.90) 30%);
+            padding: 0 1px 1px 1px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            // z-index: 10;
+            text-transform: uppercase;
+
+
+            &::after {
+                position: relative;
+                z-index: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 500px;
+                background-color: #000;
+
+
+            }
+
+            .inner-div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                border-radius: 500px;
+                background: linear-gradient(180deg, #1C1C1C 0%, rgba(21, 21, 21, 0.57) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .link-tag {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 400;
+                    text-shadow: 0.2vw 0.2vw 2px #000;
+                    font-size: 1vw;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .lp-contact-us-comp-main-container {
+        .frame-contant-div {
+            width: 100%;
+            height: 100%;
+
+            .cross-btn {
+                top: 8%;
+                right: 5%;
+                font-size: 5vw;
+
+            }
+
+            #iframe-calendly {
+                margin-top: 2%;
+                width: 80%;
+                height: 75%;
+                border-radius: 1vw;
+                border: none;
+                box-shadow: 0.8vw 0.8vw 1px #000;
+                background-color: #000;
+
+
+            }
+        }
+
+        .lamp-white-img {
+            top: -22vh;
+            height: 150%;
+            width: 150%;
+        }
+
+        .pitch-power-heading {
+            top: 80%;
+            font-size: 4vw;
+            line-height: 5.5vw;
+            text-shadow: 0.2vw 0.2vw 2px #000;
+
+            span {
+                font-weight: 600;
+                font-size: 7vw;
+
+            }
+        }
+
+        .chat-with-us-div {
+            width: 80vw;
+            height: 40vw;
+
+            // border: 1px solid #fff;
+            .heading {
+                font-size: 12vw;
+                font-weight: 600;
+
+                span {
+                    color: #fff;
+                    font-size: 6vw;
+                    font-weight: 400;
+                }
+
+            }
+
+            p {
+                color: #fff;
+                font-size: 4vw;
+                font-weight: 300;
+                text-transform: capitalize;
+                text-shadow: 0.2vw 0.2vw 2px #000;
+
+            }
+        }
+
+        .btn-div {
+            display: flex;
+            gap: 10%;
+            margin-top: 5%;
+
+            .contact-us-btn,
+            .schedule-call-btn {
+                width: 40vw;
+                height: 8.5vw;
+
+                .inner-div {
+                    .link-tag {
+                        font-size: 3.2vw;
+
+                    }
+                }
+            }
+        }
+
+    }
+}

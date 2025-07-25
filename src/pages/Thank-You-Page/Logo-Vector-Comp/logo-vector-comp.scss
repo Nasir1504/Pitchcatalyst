@@ -1,0 +1,118 @@
+.thank-you-page-logo-vector-comp-main-container {
+    position: absolute;
+    width: 50vw;
+    height: 20vw;
+    // background-color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    // border: 1px solid black;
+    transition: 0s;
+    transform: translateY(100vh);
+    transition: 1s ease-in;
+
+    img {
+        transition: ease-out 1.2s;
+        pointer-events: none;
+
+    }
+
+    .part-one {
+        object-fit: contain;
+    }
+
+    .part-two {
+        object-fit: contain;
+    }
+
+    .part-three {
+        object-fit: contain;
+    }
+
+    .part-four {
+        object-fit: contain;
+    }
+
+    .bottom-part {
+        position: absolute;
+        top: 100%;
+        left: 0.55%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: ease-in-out 2.5s;
+        // opacity: 0;
+
+        img {
+            position: absolute;
+            top: -100%;
+            left: 8.4%;
+            width: 81%;
+            min-height: 100%;
+            object-fit: contain;
+            z-index: 0;
+            transition: ease-in-out 2.5s;
+
+        }
+    }
+
+
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .thank-you-page-logo-vector-comp-main-container {
+        width: 100vw;
+        height: 40vw;
+        z-index: 1;
+        transform: translateY(100vh) rotate(90deg);
+
+
+        img {
+            transition: 0.5s;
+        }
+
+        .part-one {
+            object-fit: contain;
+        }
+
+        .part-two {
+            object-fit: contain;
+        }
+
+        .part-three {
+            object-fit: contain;
+        }
+
+        .part-four {
+            object-fit: contain;
+        }
+
+        .bottom-part {
+            position: absolute;
+            top: 100%;
+            left: 0.55%;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: ease-in-out 2.5s;
+            // opacity: 0;
+
+            img {
+                position: absolute;
+                top: -100%;
+                left: 8.4%;
+                width: 81%;
+                min-height: 100%;
+                object-fit: contain;
+                z-index: 0;
+                transition: ease-in-out 2.5s;
+
+            }
+        }
+
+    }
+}

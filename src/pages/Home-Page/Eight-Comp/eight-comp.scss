@@ -1,0 +1,85 @@
+.eight-comp-main-container {
+    width: 100%;
+    // height: 100%;
+    // height: 70vw;
+    height: 55vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: #0A1B1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+    overflow: hidden;
+    z-index: 0;
+
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: url('https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/pawel-czerwinski-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.17;
+        mix-blend-mode: overlay;
+    }
+
+    .main-comp-content-div {
+        // margin-top: -15%;
+        transform: translate(200%);
+        transition: 1.2s;
+        
+        .heading {
+            color: #fff;
+            font-size: 9vw;
+            line-height: 8vw;
+            font-weight: 600;
+
+            .span1 {
+                font-size: 12vw;
+                font-weight: 300;
+            }
+
+            .span2 {
+                color: #E1FF01;
+            }
+
+        }
+    }
+
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .eight-comp-main-container {
+        width: 100%;
+        height: 100%;
+    
+        .main-comp-content-div {
+            .heading {
+                color: #fff;
+                font-size: 12vw;
+                line-height: 13vw;
+                font-weight: 600;
+    
+                .span1 {
+                    font-size: 18vw;
+                    font-weight: 300;
+                }
+    
+            }
+        }
+    
+    }
+    
+
+}

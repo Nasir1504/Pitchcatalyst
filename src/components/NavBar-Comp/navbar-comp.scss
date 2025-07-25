@@ -1,0 +1,197 @@
+.navbar-comp-main-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    z-index: 10;
+
+
+    .horizontal-scroll-bar {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 0.05vw;
+        opacity: 0.5;
+        background-color: #e1ff01;
+        transition: 0.1s;
+        mix-blend-mode: color;
+
+        .padding-div {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+
+        }
+    }
+
+    @keyframes whatsappIconKF {
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .whatsapp-div {
+        position: absolute;
+        width: 2.6vw;
+        height: 2.6vw;
+        border-radius: 50%;
+        opacity: 0.8;
+        background-color: #000;
+        right: 2%;
+        top: 90vh;
+        overflow: hidden;
+        padding: 1px;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(224deg, #DEFC01 20.81%, #000 48.73%);
+            z-index: 0;
+
+            // animation: whatsappIconKF 2s ease-in-out infinite alternate;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+
+            &::after {
+                animation: whatsappIconKF 1.2s ease-out infinite;
+            }
+        }
+
+        .inner-div {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .whatsapp-icon {
+                    width: 70%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+}
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .navbar-comp-main-container {
+        .whatsapp-div {
+            width: 2.6vw;
+            height: 2.6vw;
+        }
+
+    }
+}
+
+//-----------------------(max-width: 1640px)------------------------------
+
+@media only screen and (max-width: 1640px) {
+    .navbar-comp-main-container {
+        height: 90px;
+
+    }
+}
+
+//-----------------------(max-width: 1540px)------------------------------
+
+@media only screen and (max-width: 1540px) {
+    .navbar-comp-main-container {
+        height: 80px;
+
+    }
+}
+
+//-----------------------(max-width: 1240px)------------------------------
+
+@media only screen and (max-width: 1240px) {
+    .navbar-comp-main-container {
+        height: 70px;
+
+        .whatsapp-div {
+            width: 4vw;
+            height: 4vw;
+        }
+
+    }
+}
+
+//-----------------------(max-width: 1140px)------------------------------
+
+@media only screen and (max-width: 1140px) {
+    .navbar-comp-main-container {
+        height: 60px;
+
+    }
+}
+
+//-----------------------(max-width: 1040px)------------------------------
+
+@media only screen and (max-width: 1040px) {
+    .navbar-comp-main-container {
+        height: 60px;
+
+    }
+}
+
+//-----------------------(max-width: 480px)------------------------------
+
+@media only screen and (max-width: 480px) {
+    .navbar-comp-main-container {
+        height: 15vw;
+
+        .whatsapp-div {
+            width: 8.5vw;
+            height: 8.5vw;
+            top: 94vh;
+        }
+
+        // .logo-div {
+        //     width: 20%;
+        //     height: 65%;
+        // }
+
+        // .nav-items-div {
+        //     width: 70%;
+
+        //     .links-tag {
+        //         font-size: 2.2vw;
+        //     }
+
+
+        //     .login-btn {
+        //         width: 14vw;
+        //     }
+
+
+        // }
+    }
+}

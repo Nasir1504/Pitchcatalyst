@@ -1,0 +1,127 @@
+.comp-one-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+
+    &:hover {
+        .top-img-div {
+            transform: scale(1.1);
+
+        }
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(70deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 0.5%;
+        left: 0.7%;
+        width: 98.6%;
+        height: 99%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top-img-div {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+
+
+            img {
+                width: 90%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .bottom-content-div {
+            width: 100%;
+            height: 50%;
+            padding: 0 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+
+            p {
+                width: 100%;
+                padding-bottom: 2%;
+                font-size: 1.5vw;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 0.1vw solid #222;
+                text-shadow: 0.3vw 0.5vw 0.2vw #000;
+
+                span {
+                    color: #F1FF86;
+                }
+            }
+        }
+    }
+
+    .before-div {
+        position: absolute;
+        width: 45vw;
+        height: 70vh;
+        background-image: linear-gradient(-140deg, #E1FF01 30.56%, rgba(0, 0, 0, 0) 45.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+        // animation: rotate 2s infinite linear alternate-reverse;
+
+    }
+}
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .comp-one-main-container {
+        border-radius: 2vw;
+
+        .after-div {
+            top: 0.5%;
+            left: 0.7%;
+            width: 98.6%;
+            height: 99%;
+            border-radius: 2vw;
+
+            .bottom-content-div {
+                p {
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        .before-div {
+            width: 85vw;
+            height: 50vh;
+            background-image: linear-gradient(-140deg, #E1FF01 30.56%, rgba(0, 0, 0, 0) 45.57%);
+            border-radius: 2vw;
+
+        }
+    }
+
+}

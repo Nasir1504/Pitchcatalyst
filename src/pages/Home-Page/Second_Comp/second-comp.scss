@@ -1,0 +1,231 @@
+.second-comp-main-container {
+    width: 100%;
+    height: 55vw;
+    // border: 1px solid #fff;
+    background-color: #000;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+    .top-hr {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        height: 0.04vw;
+        border: none;
+        background: linear-gradient(90.06deg, #E1FF00 0%, rgba(222, 251, 6, 0) 141.63%, rgba(0, 0, 0, 0) 211.45%);
+        transform: scale(-1);
+
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        // background-image: url('https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/pawel-czerwinski-unsplash.jpg');
+        background-size: cover;
+        opacity: 0.17;
+        mix-blend-mode: overlay;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    .left-div {
+        width: 45%;
+        height: 100%;
+        // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .sliding-img-div {
+            width: 60%;
+            height: auto;
+            // border: 1px solid #fff;
+            position: relative;
+            margin-top: -20%;
+
+            .img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                object-fit: contain;
+                opacity: 0;
+                transition: 0.8s;
+            }
+        }
+
+    }
+
+    .scrolling-para {
+        width: 55%;
+        height: 35%;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25%;
+        // overflow: hidden;
+        // background-color: #888;
+        padding: 0% 10%;
+        color: #fff;
+
+        .scrollbar-div {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            height: 80%;
+            width: 0.5%;
+            border-radius: 20px;
+            overflow: hidden;
+
+            .scroller {
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0.2;
+            }
+
+        }
+
+        .hr {
+            position: absolute;
+            left: 10%;
+            margin-right: 50px;
+            top: 30%;
+            width: 10px;
+            height: 40%;
+            background-color: #fff;
+            z-index: 5;
+        }
+
+        .para-slide {
+            width: 100%;
+            min-height: 40%;
+            // background-color: #888;
+            transition: all 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -10%;
+
+
+            p {
+                // background-color: green;
+                color: #fff;
+                text-align: center;
+                font-size: 1.2vw;
+                font-weight: 300;
+                // margin-bottom: 10%;
+                transition: all 1.0s;
+
+            }
+        }
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .second-comp-main-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        // border: 1px solid #fff;
+        flex-direction: column;
+        // background-color: #fff;
+        padding: 20% 0;
+        
+        .top-hr {
+            height: 0.15vw;
+        }
+
+
+        .left-div {
+            width: 100%;
+            height: 30%;
+            // border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .sliding-img-div {
+                width: 50%;
+                height: auto;
+                position: relative;
+                margin-top: -20%;
+
+                .img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    object-fit: contain;
+                    opacity: 0;
+                    transition: 0.8s;
+                }
+            }
+
+        }
+
+        .scrolling-para {
+            width: 100%;
+            height: 40%;
+            top: 40%;
+            right: 0;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20%;
+            padding: 0% 10%;
+
+            .scrollbar-div {
+                right: 2%;
+                height: 80%;
+                width: 0.5%;
+
+            }
+
+            .hr {
+                position: absolute;
+                left: 10%;
+                margin-right: 50px;
+                top: 30%;
+                width: 10px;
+                height: 40%;
+                background-color: #fff;
+                z-index: 5;
+            }
+
+            .para-slide {
+                width: 100%;
+                min-height: 40%;
+                // background-color: #888;
+                transition: all 1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -10%;
+
+
+                p {
+                    padding: 0 5%;
+                    font-size: 3.4vw;
+                    font-weight: 300;
+
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,174 @@
+.more-category-card-main-container{
+    width: 100%;
+    height: 100%;
+    background-color: #141A1C;
+    border-radius: 1vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .circle-vector1-div {
+        position: absolute;
+        top: -5.5vw;
+        left: -4vw;
+        width: 13vw;
+        height: 13vw;
+        background-color: #2B2B2B;
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+
+    .circle-vector2-div {
+        position: absolute;
+        bottom: -3vw;
+        right: -4vw;
+        width: 13vw;
+        height: 13vw;
+        border-radius: 50%;
+        background-color: #2B2B2B;
+        opacity: 0.2;
+
+    }
+
+    .logo-img {
+        position: absolute;
+        top: 12%;
+        right: 5%;
+        width: 3vw;
+        object-fit: contain;
+    }
+
+    h1 {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        font-size: 1.4vw;
+        line-height: 1.2vw;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #E1FF00;
+
+        span {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 500;
+
+
+        }
+    }
+
+    .hr-line1 {
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        width: 45%;
+        height: 1px;
+        // background-color: #fff;
+        background: linear-gradient(-90deg, #E1FF00 6.57%, rgba(0, 0, 0, 0.00) 100%, rgba(0, 0, 0, 0.00) 64.58%);
+    }
+
+    .hr-line2 {
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        width: 62%;
+        height: 1px;
+        // background-color: #fff;
+        background: linear-gradient(90deg, #E1FF00 6.57%, rgba(0, 0, 0, 0.00) 100%, rgba(0, 0, 0, 0.00) 64.58%);
+
+    }
+
+    p {
+        position: absolute;
+        width: 85%;
+        top: 55%;
+        left: 5%;
+        font-size: 0.9vw;
+        font-weight: 400;
+    }
+
+    button {
+        position: absolute;
+        right: 2%;
+        bottom: 10%;
+        border: none;
+        border-radius: 20px;
+        padding: 1% 2.5%;
+        font-size: 0.85vw;
+        font-weight: 600;
+        background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.60) 100%);
+        box-shadow: 0vw 0.4vw 2px 0px rgba(0, 0, 0, 0.80);
+        cursor: pointer;
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .more-category-card-main-container {
+        border-radius: 2.5vw;
+    
+        .circle-vector1-div {
+            top: -16vw;
+            left: -8vw;
+            width: 35vw;
+            height: 35vw;
+        }
+    
+        .circle-vector2-div {
+            bottom: -10vw;
+            right: -12vw;
+            width: 35vw;
+            height: 35vw;
+        }
+    
+        .logo-img {
+            top: 8%;
+            right: 5%;
+            width: 8vw;
+        }
+    
+        h1 {
+            top: 10%;
+            left: 5%;
+            font-size: 4.8vw;
+            line-height: 4.5vw;
+            font-weight: 400;
+    
+            span {
+                font-size: 4.2vw;
+                font-weight: 500;
+    
+            }
+        }
+    
+        .hr-line1 {
+            top: 45%;
+            right: 10%;
+
+        }
+    
+        .hr-line2 {
+            bottom: 10%;
+            left: 5%;
+    
+        }
+    
+        p {
+            top: 55%;
+            left: 5%;
+            font-size: 3vw;
+            font-weight: 300;
+        }
+
+    
+    }
+    
+    
+}

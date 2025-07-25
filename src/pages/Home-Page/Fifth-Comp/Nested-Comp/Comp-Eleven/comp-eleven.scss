@@ -1,0 +1,147 @@
+.comp-eleven-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(140deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 0.5%;
+        left: 0.5%;
+        width: 99%;
+        height: 99%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 8%;
+        overflow: hidden;
+
+        .bg-color-div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #2d2d2d;
+            z-index: -1;
+            transition: 1.2s;
+            opacity: 1;
+            transform-origin: top;
+        }
+
+        .top-div {
+            width: 100%;
+            height: 30%;
+            border-radius: 0.4vw;
+            box-shadow: 0 0.3vw 0.2vw #000;
+            transition: 1.8s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: #fff;
+                font-size: 2.5vw;
+                font-weight: 400;
+                text-shadow: 0.2vw 0.2vw 0.2vw #000;
+                transition: 0.4s;
+
+            }
+        }
+
+        .bottom-div {
+            width: 80%;
+            height: 60%;
+            background-color: #fff;
+            border-radius: 0.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 4%;
+            // overflow: hidden;
+            text-align: center;
+
+            p {
+                width: 70%;
+                left: 12%;
+                transition: 0.4s;
+                position: absolute;
+                font-size: 0.8vw;
+                font-weight: 500;
+                line-height: 1vw;
+            }
+        }
+
+    }
+
+    .before-div {
+        position: absolute;
+        width: 40vw;
+        height: 70vh;
+        background-image: linear-gradient(20deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+    }
+}
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .comp-eleven-main-container {
+        border-radius: 2vw;
+    
+        .after-div {
+            top: 0.5%;
+            left: 0.5%;
+            width: 99%;
+            height: 99%;
+            border-radius: 2vw;
+    
+            .top-div {
+                border-radius: 2vw;
+    
+                p {
+                    font-size: 4vw;
+                    font-weight: 400;
+    
+                }
+            }
+    
+            .bottom-div {
+                width: 85%;
+                border-radius: 0.5vw;
+    
+                p {
+                    left: 10%;
+                    width: 75%;
+                    font-size: 2.1vw;
+                    font-weight: 500;
+                    line-height: 2.5vw;
+                }
+            }
+    
+        }
+    
+        .before-div {
+            width: 90vw;
+            height: 90vw;
+            background-image: linear-gradient(20deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+            border-radius: 2vw;
+        }
+    }
+    
+}

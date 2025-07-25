@@ -1,0 +1,161 @@
+.tenth-comp-main-container {
+    width: 100%;
+    height: 55vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: #0A1B1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    mix-blend-mode: hard-light;
+
+    .bg-img {
+        position: absolute;
+        bottom: 25%;
+        left: 35.5%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: rotate(-73.92deg);
+        opacity: 0.8;
+        z-index: 0;
+        transition: 1.5s;
+        opacity: 0.7;
+    }
+
+    .content-div {
+        position: absolute;
+        left: 10%;
+        // margin-bottom: 20%;
+        z-index: 1;
+
+        .heading {
+            color: #fff;
+            font-size: 3vw;
+            font-weight: 500;
+            text-shadow: 0.2vw 0.2vw 2px #222;
+            margin-bottom: 1%;
+
+            span {
+                color: #E1FF01;
+            }
+        }
+
+        h2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1%;
+            color: #fff;
+            font-size: 2vw;
+            font-weight: 300;
+            text-shadow: 0.2vw 0.2vw 2px #222;
+            margin-bottom: 4%;
+
+            span {
+                width: 15%;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // opacity: 0;
+
+                img {
+                    width: 85%;
+                }
+            }
+
+
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2vw;
+            font-weight: 300;
+            text-shadow: 0.2vw 0.2vw 2px #222;
+        }
+    }
+
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .tenth-comp-main-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bg-img {
+            position: absolute;
+            bottom: -12%;
+            left: 0%;
+            width: 100%;
+            object-fit: contain;
+            transform: rotate(0deg);
+            // opacity: 0.5;
+            z-index: 0;
+            transition: 1.5s;
+            mix-blend-mode: color-burn;
+            // mix-blend-mode: darken;
+        }
+
+        .content-div {
+            position: absolute;
+            left: 0%;
+            top: 15%;
+
+            // margin-bottom: 20%;
+            .img-span {
+                margin-left: 38%;
+                width: 25%;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // opacity: 0;
+                margin-bottom: 5%;
+
+                img {
+                    width: 85%;
+                }
+            }
+
+            .heading {
+                font-size: 6vw;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3.5vw;
+                font-weight: 300;
+                opacity: 0.6;
+
+            }
+
+            p {
+                font-size: 3.4vw;
+                font-weight: 200;
+                text-align: center;
+                line-height: 5vw;
+                padding: 0 15%;
+                margin-top: 15%;
+            }
+        }
+
+    }
+}

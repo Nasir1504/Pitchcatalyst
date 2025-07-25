@@ -1,0 +1,107 @@
+.phone-mocks-comp-main-container {
+    width: 100%;
+    height: 100%;
+    // background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+
+    .mock-container-style {
+        position: absolute;
+        // width: 550px;
+        // height: 420px;
+        width: 32.5vw;
+        height: 25vw;
+        // border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        filter: drop-shadow(30px 10px 4px #000);
+        transition: 0.6s;
+
+
+        .mock-one {
+            width: 20.5%;
+            height: 100%;
+            object-fit: contain;
+            margin-top: 12%;
+            opacity: 0.5;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .mock-two {
+            width: 24.5%;
+            height: 100%;
+            object-fit: contain;
+            margin-top: 6%;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
+
+        }
+
+        .mock-three {
+            width: 30%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    .mock-container-one {
+        @extend .mock-container-style;
+        transform: rotate(-13deg);
+        top: -8%;
+        right: -17%;
+
+    }
+
+    .mock-container-two {
+        @extend .mock-container-style;
+        transform: rotate(186deg) scaleX(-1);
+        top: 28%;
+        right: -19.2%;
+       
+    }
+    .mock-container-three{
+        @extend .mock-container-style;
+        transform: rotate(210deg) scaleX(-1);
+        top: 56%;
+        right: -11.8%;
+    }
+    .mock-container-four{
+        @extend .mock-container-style;
+        transform: rotate(72deg);
+        top: 72%;
+        right: 2%
+    }
+    .mock-container-five{
+        @extend .mock-container-style;
+        transform: rotate(261deg) scaleX(-1);
+        top: 80%;
+        right: 25%
+    }
+    .mock-container-six{
+        @extend .mock-container-style;
+        transform:  rotate(285deg) scaleX(-1);
+        top: 77%;
+        right: 45.5%
+    }
+
+    .mock-container-seven{
+        @extend .mock-container-style;
+        transform:  rotate(310deg) scaleX(-1);
+        top: 62%;
+        right: 63.5%
+    }
+}

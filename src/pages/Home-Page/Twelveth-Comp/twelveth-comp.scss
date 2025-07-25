@@ -1,0 +1,399 @@
+.twelveth-comp-main-container {
+    width: 100%;
+    height: 50vw;
+
+    .top-div {
+        width: 100%;
+        margin-left: 0%;
+        height: 25%;
+        // background-color: #1f1f1f;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+
+        .heading {
+            font-size: 2vw;
+            font-weight: 600;
+            line-height: 2.5vw;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 1vw;
+            font-weight: 500;
+            text-align: center;
+        }
+
+
+    }
+
+    // -----------------------------------MIDDLE PART--------------------------
+
+    .middle-div {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: cadetblue;
+        position: relative;
+        font-size: 1vw;
+        overflow: hidden;
+
+        .slider {
+            // width: 100%;
+            position: absolute;
+            top: 0;
+            height: 80%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            // gap: 5%;
+            align-items: center;
+            z-index: 0;
+
+
+            .slides {
+                // background-color: aqua;
+                // min-width: 300px;
+                min-width: 19vw;
+                height: 11vw;
+                transition: 1.5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                // transform: scale(1.2);
+                user-select: none;
+                border-radius: 0.5vw;
+                overflow: hidden;
+
+                img {
+                    width: 95%;
+                    height: 95%;
+                    object-fit: contain;
+                    margin-left: 8%;
+                    filter: drop-shadow(0.3vw 0.15vw 1px #000);
+                }
+
+
+            }
+        }
+
+        .bottom-slider {
+            position: absolute;
+            bottom: 8%;
+            width: 100%;
+            height: 20%;
+            // background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            z-index: 1;
+
+            .prev,
+            .next {
+                width: 10%;
+                height: 40%;
+                color: #dadada;
+                font-size: 1.4vw;
+                font-weight: 400;
+                cursor: pointer;
+                transition: 0.1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                z-index: 2;
+
+
+                span {
+                    width: 50%;
+                    height: 100%;
+                    // background-color: #555;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .icon-span {
+                    width: 3.5vw;
+                    height: 3.5vw;
+                    color: #fff;
+                    font-size: 3vw;
+                    background-color: #000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    padding: 0 0 5% 0;
+                }
+
+            }
+
+            .middle-slider {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .profile-photo-slider {
+                    width: 80%;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    // background-color: #000;
+                    display: flex;
+                    justify-content: center;
+                    // gap: 5%;
+                    align-items: center;
+                    overflow: hidden;
+                    // transition: 1.5s;
+
+                    p {
+                        position: absolute;
+                    }
+
+                    .profile-photo-slides {
+                        // background-color: aqua;
+                        min-width: 8%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        user-select: none;
+                        transition: 1.2s;
+
+                        img {
+                            width: 4vw;
+                            height: 4vw;
+                            object-fit: contain;
+                            // background-color: #E1FF01;
+                            border-radius: 50%;
+                            transition: 0.8s;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    // -------------------------------------------------------------------------
+
+    .bottom-part {
+        width: 105%;
+        height: 35%;
+        margin-left: -2.5%;
+        background-color: #111;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        padding-top: 1.5%;
+
+
+
+        .strip-div {
+            width: 100%;
+            height: 110%;
+            background-color: #000;
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50% 50% 0 0;
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+            margin-top: 0.6%;
+
+            // opacity: 0;
+
+            .strip-one-div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: -1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50% 50% 0 0;
+                background-color: #000;
+                // background-color: red;
+
+                z-index: 2;
+                // opacity: 0;
+
+            }
+
+            .strip-two-div {
+                position: absolute;
+                width: 150vw;
+                height: 150vw;
+                top: -500%;
+                background-image: conic-gradient(from -120deg, #000 70deg, #e1ff01 150deg, #000 240deg);
+                border-radius: 50%;
+                animation: gradientKF 4s infinite linear alternate-reverse;
+
+            }
+
+        }
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .twelveth-comp-main-container {
+        height: 45vw;
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .twelveth-comp-main-container {
+        height: 45vw;
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .twelveth-comp-main-container {
+        width: 100%;
+        height: 80vh;
+        background-color: #000;
+
+        .top-div {
+            margin-top: 20%;
+
+            .heading {
+                font-size: 5.5vw;
+                font-weight: 500;
+                line-height: 8vw;
+                color: #fff;
+
+                span {
+                    font-size: 5.5vw;
+                    font-weight: 500;
+                }
+            }
+
+            p {
+                color: #fff;
+                line-height: 3vw;
+                text-align: center;
+                font-size: 2.6vw;
+                font-weight: 400;
+            }
+
+
+        }
+
+        // -----------------------------------MIDDLE PART--------------------------
+
+        .middle-div {
+            width: 100%;
+            height: 55%;
+            font-size: 1vw;
+
+            .slider {
+                height: 100%;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                // gap: 5%;
+                align-items: center;
+                z-index: 0;
+
+
+                .slides {
+                    min-width: 48vw;
+                    height: 32vw;
+                    // border: 1px solid #fff;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        margin-left: 6%;
+                        filter: drop-shadow(0.3vw 0.15vw 1px #000);
+                    }
+
+                }
+            }
+
+            .bottom-slider {
+                width: 100%;
+                height: 16%;
+
+                .prev,
+                .next {
+                    width: 10%;
+                    height: 40%;
+                    color: #000;
+
+                    .icon-span {
+                        min-width: 8vw;
+                        height: 8vw;
+                        color: #000;
+                        font-size: 8vw;
+                        font-weight: 600;
+                        background-color: #fff;
+                        padding: 0 0 12% 0;
+                    }
+
+                }
+
+                .prev {
+                    margin-left: 5%;
+                }
+
+                .next {
+                    margin-right: 5%;
+                }
+
+                .middle-slider {
+                    width: 80%;
+
+                    .profile-photo-slider {
+                        width: 90%;
+
+                        .profile-photo-slides {
+                            min-width: 14.5%;
+
+                            img {
+                                width: 10vw;
+                                height: 10vw;
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        // -------------------------------------------------------------------------
+
+        .bottom-part {
+            display: none;
+
+        }
+    }
+}

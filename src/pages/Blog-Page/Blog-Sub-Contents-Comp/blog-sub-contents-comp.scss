@@ -1,0 +1,116 @@
+.blog-sub-contents-comp-main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .details {
+        h1 {
+            font-size: 1.2vw;
+            font-weight: 600;
+            color: #333333;
+            margin: 3% 0 1%;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 90%;
+            font-size: 1.1vw;
+            line-height: 1.4vw;
+            font-weight: 500;
+            color: #000;
+            opacity: 0.8;
+            margin-left: 1%;
+        }
+
+        .sub-para-div {
+            display: flex;
+            width: 80%;
+            margin: 2% 0;
+            // padding-left: 2%;
+
+            .bullet-point-div {
+                width: 5%;
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 0.8%;
+
+
+                span {
+                    min-width: 0.4vw;
+                    height: 0.4vw;
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+
+
+
+            .sub-para {
+                width: 95%;
+                font-size: 1vw;
+                font-weight: 500;
+                font-weight: 500;
+
+
+            }
+        }
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .blog-sub-contents-comp-main-container {
+    
+        .details {
+            h1 {
+                font-size: 3vw;
+                font-weight: 600;
+                margin: 4% 0 1%;
+            }
+    
+            p {
+                width: 95%;
+                font-size: 3vw;
+                line-height: 3.2vw;
+                font-weight: 500;
+                color: #000;
+                opacity: 0.8;
+                margin-left: 4%;
+            }
+    
+            .sub-para-div {
+                display: flex;
+                width: 80%;
+                margin: 4% 0;
+    
+                .bullet-point-div {
+                    width: 5%;
+                    padding-top: 2%;
+    
+    
+                    span {
+                        min-width: 0.8vw;
+                        height: 0.8vw;
+                    }
+                }
+    
+    
+    
+                .sub-para {
+                    width: 95%;
+                    font-size: 2.8vw;
+                    font-weight: 500;
+                    font-weight: 500;
+    
+    
+                }
+            }
+        }
+    }
+    
+    
+}

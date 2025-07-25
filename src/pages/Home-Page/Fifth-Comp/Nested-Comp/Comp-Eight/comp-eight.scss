@@ -1,0 +1,277 @@
+.comp-eight-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(140deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 0.5%;
+        left: 0.5%;
+        width: 99%;
+        height: 99%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+        display: flex;
+        overflow: hidden;
+
+        .left-div {
+            width: 40%;
+            height: 100%;
+            // background-color: #888;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2%;
+            position: relative;
+
+            .heat-map-heading {
+                color: #fff;
+                font-size: 2.5vw;
+                font-weight: 500;
+                line-height: 2.2vw;
+                text-shadow: 0.2vw 0.2vw 2px #000;
+                position: absolute;
+                top: 30%;
+            }
+
+            p {
+                position: absolute;
+                color: #fff;
+                font-size: 0.5vw;
+                font-weight: 100;
+                width: 80%;
+            }
+
+            .para-one {
+                top: 55%;
+
+
+            }
+
+            .para-two {
+                top: 62%;
+
+
+            }
+
+
+        }
+
+        .right-div {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6%;
+            position: relative;
+
+            .verticle-div {
+                width: 10%;
+                height: 70%;
+                // background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+                p {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 0.5vw;
+                    font-weight: 100;
+                    bottom: 102%;
+                }
+
+                .h-bar {
+                    width: 100%;
+                    height: 0.3vw;
+                    border-radius: 10px;
+                }
+
+                .v-bar {
+                    width: 100%;
+                    // height: 80%;
+                    transition: 0.8s;
+                }
+            }
+
+            .verticle-one {
+                background: none;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #111;
+                    z-index: 1;
+                    transition: all 2s ease-in;
+
+                }
+
+                p {
+                    position: absolute;
+                }
+
+                .para-one {
+                    bottom: 102%;
+                }
+
+                .para-two {
+                    top: 102%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .verticle-two {
+                .h-bar {
+                    background-color: #E1FF01;
+                }
+
+                .v-bar {
+                    border-radius: 0.3vw;
+                    background-color: #E1FF01;
+                    height: 92%;
+
+                }
+            }
+
+            .verticle-three {
+                .h-bar {
+                    background-color: #FF7B01;
+                }
+
+                .v-bar {
+                    border-radius: 0.3vw;
+                    background-color: #FF7B01;
+                    height: 85%;
+
+                }
+            }
+
+            .verticle-four {
+                .h-bar {
+                    background-color: #0601FF;
+
+                }
+
+                .v-bar {
+                    border-radius: 0.3vw;
+                    background-color: #0601FF;
+                    height: 80%;
+
+                }
+            }
+
+            .verticle-five {
+                p {
+                    margin-left: 50%;
+                }
+
+                .h-bar {
+                    background-color: #FFFFFF;
+                }
+
+                .v-bar {
+                    border-radius: 0.3vw;
+                    background-color: #FFFFFF;
+                    height: 90%;
+
+                }
+            }
+        }
+
+    }
+
+    .before-div {
+        position: absolute;
+        width: 35vw;
+        height: 75vh;
+        background-image: linear-gradient(20deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+    }
+}
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .comp-eight-main-container {
+        border-radius: 2vw;
+
+        .after-div {
+            top: 0.5%;
+            left: 0.6%;
+            width: 98.8%;
+            height: 99%;
+            border-radius: 2vw;
+
+            .left-div {
+
+                .heat-map-heading {
+                    font-size: 4.5vw;
+                    font-weight: 500;
+                    line-height: 4.5vw;
+                    top: 20%;
+                }
+
+                p {
+                    font-size: 1.8vw;
+                    font-weight: 100;
+                }
+
+                .para-one {
+                    top: 40%;
+                    left: 20%;
+                }
+
+                .para-two {
+                    top: 60%;
+                    left: 20%;
+                }
+            }
+
+            .right-div {
+                gap: 10%;
+                padding-right: 5%;
+                .verticle-div {
+
+                    p {
+                        font-size: 1.5vw;
+                        font-weight: 100;
+                    }
+                }
+            }
+
+        }
+
+        .before-div {
+            width: 90vw;
+            height: 90vw;
+            background-image: linear-gradient(20deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+            border-radius: 2vw;
+        }
+    }
+}

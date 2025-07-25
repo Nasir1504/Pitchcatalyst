@@ -1,0 +1,159 @@
+.comp-two-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    position: relative;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(70deg);
+
+        }
+    }
+
+    .after-div {
+        position: absolute;
+        top: 1.5%;
+        left: 0.5%;
+        width: 99%;
+        height: 97%;
+        background-color: #111;
+        border-radius: 0.4vw;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-img-div {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @keyframes iconKF {
+                100% {
+                    transform: rotate(-360deg);
+                }
+
+            }
+
+            .img-div {
+                width: 80%;
+                height: 60%;
+                box-shadow: 0.15vw 0.2vw 4px #000;
+                border-radius: 0.6vw;
+                background-color: #2d2d2d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5%;
+                transition: 1s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    // animation: iconKF 2s ease-in-out 5s infinite;
+                }
+
+            }
+        }
+
+        .right-content-div {
+            width: 65%;
+            height: 100%;
+            // background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+            p {
+                font-size: 0.7vw;
+                color: #fff;
+                text-shadow: 0.15vw 0.2vw 2px #000;
+
+            }
+
+            .time-para {
+                height: 60%;
+                font-size: 2vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+
+                span {
+                    margin-top: 34%;
+                    font-size: 0.7vw;
+                }
+
+            }
+        }
+    }
+
+    .before-div {
+        position: absolute;
+        width: 25vw;
+        height: 45vh;
+        background-image: linear-gradient(140deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+        border-radius: 0.4vw;
+        z-index: 0;
+        transition: 0.6s;
+
+    }
+
+}
+
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+
+    .comp-two-main-container {
+        border-radius: 2vw;
+
+        .after-div {
+            top: 1.5%;
+            left: 0.5%;
+            width: 99%;
+            height: 97%;
+            border-radius: 2vw;
+
+            .left-img-div {
+                width: 35%;
+
+            }
+
+            .right-content-div {
+
+                p {
+                    font-size: 2vw;
+
+                }
+
+                .time-para {
+                    font-size: 4vw;
+
+                    span {
+                        margin-top: 22%;
+                        font-size: 1.8vw;
+                    }
+
+                }
+            }
+        }
+
+        .before-div {
+            width: 85vw;
+            height: 45vh;
+            background-image: linear-gradient(140deg, #E1FF01 35.56%, rgba(0, 0, 0, 0) 55.57%);
+            border-radius: 2vw;
+
+        }
+    }
+}

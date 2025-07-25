@@ -1,0 +1,375 @@
+.our-pricing-page-main-container {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+
+    .scroll-down-text-div {
+        position: absolute;
+        bottom: 5%;
+        width: 25%;
+        height: 6%;
+        // border: 1px solid black;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        transition: 0.8s;
+
+        @keyframes scrollDown {
+            0% {
+                margin-top: -2%;
+            }
+
+            100% {
+                margin-top: 2%;
+            }
+        }
+
+
+        .para {
+            width: 100%;
+            height: 100%;
+            font-size: 1.2vw;
+            font-weight: 600;
+            text-align: center;
+            position: relative;
+            // animation: scrollDown 1.2s ease-in-out infinite;
+
+            span {
+                position: absolute;
+                font-size: 2vw;
+                transition: 0.5s;
+                margin-left: 2%;
+                animation: scrollDown 1.2s ease-in-out infinite;
+                // margin-top: 10%;
+
+            }
+
+            .mouse-span {
+                position: absolute;
+                right: 20%;
+                top: -20%;
+                width: 7%;
+                height: 80%;
+                border-radius: 100px;
+                border: 2px solid black;
+                // background-color: #fff;
+                animation: none;
+                display: flex;
+                justify-content: center;
+                box-shadow: inset 0vw 0vw 8px #000;
+
+
+                .wheel-span {
+                    width: 0.2vw;
+                    height: 25%;
+                    border-radius: 100px;
+                    margin-top: 20%;
+                    background-color: #000;
+                    animation: none;
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .main-container {
+        width: 100%;
+        height: 58vw;
+        position: relative;
+        top: 0;
+        left: 0;
+        // background-color: #E1FF00;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in-out 0.8s;
+
+        .logo-rotations {
+            position: absolute;
+            width: 60vw;
+            height: 60vw;
+            // border: 1px solid #fff000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // top: 1vw;
+            transform-origin: center;
+
+            .inner-section {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                // border: 1px solid #000fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform-origin: center;
+                transition: 1.5s ease-in-out;
+
+                .logo-img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    // border: 1px solid #fff000;
+                transition: 1.5s ease-in-out;
+
+                }
+
+                .logo1 {
+                    opacity: 0;
+                    // transform: rotate(90deg);
+                }
+
+                .logo2 {
+                    opacity: 0;
+                }
+
+                .logo3 {
+                    opacity: 0;
+                    transform: rotate(90deg);
+
+                }
+
+                .logo4 {
+                    opacity: 0;
+                    transform: rotate(90deg);
+
+                }
+
+                .logo5 {
+                    opacity: 0;
+                }
+
+                .logo6 {
+                    opacity: 0;
+                }
+
+
+            }
+
+        }
+
+        .bg-logo-img1 {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            width: 64%;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 1;
+            transform: rotate(90deg);
+            transition: 1.5s ease-in-out;
+
+        }
+
+        .bg-logo-img2 {
+            position: absolute;
+            left: 22%;
+            top: 20%;
+            width: 64%;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 0;
+            transform-origin: center;
+            transition: 1.5s ease-in-out;
+            // transform: rotate(90deg);
+
+        }
+
+        .bg-logo-img3 {
+            position: absolute;
+            left: 18%;
+            top: 20%;
+            width: 64%;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 0;
+            transition: 1.5s ease-in-out;
+            // transform: translate(-20%, -10%) rotate(90deg);
+
+        }
+
+        .bg-logo-img4 {
+            position: absolute;
+            left: 8%;
+            top: 22%;
+            width: 64%;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 0;
+            transition: 1.5s ease-in-out;
+            // transform: rotate(-90deg) translate(0%, 14.2%);
+            // transform: rotate(360deg) translate(14.5%, 7%);
+
+        }
+
+        @keyframes BGLogoImgKF5 {
+            0% {
+                transform: rotate(90deg) translate(0%, 0%) scale(1)
+            }
+
+            25% {
+                transform: rotate(205deg) translate(94%, -20%) scale(0.6)
+            }
+
+            45% {
+                transform: rotate(170deg) translate(70%, 5%) scale(0.6)
+            }
+
+            100% {
+                transform: rotate(180deg) translate(80%, -1%) scale(0.6)
+            }
+
+        }
+
+        .bg-logo-img5 {
+            position: absolute;
+            left: 27%;
+            top: -37%;
+            width: 47%;
+            object-fit: contain;
+            z-index: 1;
+            opacity: 0;
+            transition: 1.5s ease-in-out;
+            // animation: BGLogoImgKF5 2s ease-out infinite;
+            // transform: rotate(-90deg) translate(-20.5%, 8%) scale(2);
+            // transform: rotate(205deg) translate(94%, -20%) scale(0.6);
+
+        }
+
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .our-pricing-page-main-container {
+        .main-container {
+            height: 51.2vw;
+
+        }
+    }
+}
+
+
+// //============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .our-pricing-page-main-container {
+        .main-container {
+            height: 50.6vw;
+
+        }
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .our-pricing-page-main-container {
+        .scroll-down-text-div {
+            position: absolute;
+            bottom: 10%;
+            width: 45%;
+            height: 4%;
+            left: 22%;
+
+
+            .para {
+                font-size: 3.2vw;
+
+                span {
+                    font-size: 6vw;
+                    transition: 0.5s;
+                    margin-left: 2%;
+
+                }
+
+                .mouse-span {
+                    right: 5%;
+                    top: -20%;
+                    width: 10%;
+                    height: 80%;
+                    border-radius: 100px;
+
+
+                    .wheel-span {
+                        width: 0.4vw;
+                        height: 25%;
+                        margin-top: 20%;
+
+                    }
+
+
+                }
+
+            }
+
+        }
+
+        .main-container {
+            height: 100vh;
+            background-color: #000;
+
+            .bg-logo-img1 {
+                position: absolute;
+                left: 10%;
+                top: 45vw;
+                width: 64%;
+            }
+
+            .bg-logo-img2 {
+                position: absolute;
+                left: 27%;
+                top: 55vw;
+                width: 47%;
+
+            }
+
+            .bg-logo-img3 {
+                position: absolute;
+                left: 27%;
+                top: 45vw;
+                width: 47%;
+                // opacity: 1;
+                // transform: rotate(0deg) translate(0%, 16%) scale(2);
+
+            }
+
+            .bg-logo-img4 {
+                position: absolute;
+                left: 8%;
+                top: 45vw;
+                width: 66%;
+
+
+            }
+
+            .bg-logo-img5 {
+                position: absolute;
+                left: 27%;
+                top: 45vw;
+                width: 47%;
+                object-fit: contain;
+                z-index: 1;
+                opacity: 0;
+                transition: 1.5s ease-in-out;
+                // animation: BGLogoImgKF5 2s ease-out infinite;
+                // transform: rotate(170deg) translate(70%, 5%) scale(0.6);
+                // transform: rotate(205deg) translate(94%, -20%) scale(0.6);
+
+
+            }
+
+        }
+    }
+}

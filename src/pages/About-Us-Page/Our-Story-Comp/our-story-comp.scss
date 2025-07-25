@@ -1,0 +1,245 @@
+.our-story-comp-main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 58vw;
+    background-color: #e1ff01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s;
+    z-index: 0;
+    // border: 1px solid #fff;
+
+    @keyframes OurStoryStartingKF {
+        0% {
+            transform: translateY(700%);
+        }
+
+        50% {
+            transform: translateY(-50%);
+        }
+
+        70% {
+            transform: translateY(40%);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+
+    }
+
+    .innovatin-ville {
+        position: absolute;
+        width: 10%;
+        object-fit: contain;
+        z-index: 2;
+        bottom: 51%;
+        left: 46%;
+        border-radius: 1vw;
+        background-color: #000;
+        display: none;
+    }
+
+    .pitch-catalyst {
+        position: absolute;
+        width: 13%;
+        object-fit: contain;
+        z-index: 2;
+        bottom: 39%;
+        left: 56%;
+        border-radius: 1vw;
+        background-color: #000;
+        display: none;
+    }
+
+    .expert-guidance-and-support {
+        position: absolute;
+        width: 10%;
+        object-fit: contain;
+        z-index: 2;
+        bottom: 36%;
+        left: 36%;
+        border-radius: 1vw;
+        background-color: #000;
+        display: none;
+    }
+
+    .bg-masking-img {
+        position: absolute;
+        width: 10%;
+        object-fit: contain;
+        transition: ease-in 1s;
+        // z-index: 1;
+        transform: translateY(700%);
+        animation: 1.5s OurStoryStartingKF ease-in-out;
+
+    }
+
+    .top-content-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        align-items: center;
+        overflow: hidden;
+        z-index: 1;
+        user-select: none;
+        transition: 1.5s;
+
+
+        .heading {
+            font-size: 5vw;
+            color: #fff;
+            font-weight: 400;
+            color: #fff;
+            transition: ease 1s;
+            // z-index: 2;
+
+            span {
+                font-weight: 600;
+                color: #e1ff01;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.2vw;
+            font-weight: 400;
+            // transform: translate(170%);
+            transition: ease 1s;
+            text-align: center;
+            letter-spacing: 0.15vw;
+            line-height: 1.6vw;
+            // z-index: 2;
+            cursor: pointer;
+
+            b {
+                color: #e1ff01;
+            }
+
+        }
+
+    }
+
+}
+
+
+//============================================================================================
+
+//-------------------  max-width: 1540px  ------------------------
+@media only screen and (max-width: 1540px) {
+    .our-story-comp-main-container {
+        height: 51.2vw;
+
+    }
+}
+
+
+//============================================================================================
+
+//-------------------  min-width: 1750px  ------------------------
+@media only screen and (min-width: 1750px) {
+    .our-story-comp-main-container {
+        height: 50.6vw;
+    }
+}
+
+//============================================================================================
+
+//-------------------  max-width: 480px  ------------------------
+@media only screen and (max-width: 480px) {
+    .our-story-comp-main-container {
+        height: 100vh;
+
+        @keyframes OurStoryStartingKF2 {
+            0% {
+                transform: translateY(800%);
+            }
+
+            50% {
+                transform: translateY(-120%);
+            }
+
+            70% {
+                transform: translateY(80%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+
+        }
+
+        // ----------------GIFs-img--------------------------------------------
+        .innovatin-ville {
+            position: absolute;
+            width: 10%;
+            object-fit: contain;
+            z-index: 2;
+            bottom: 51%;
+            left: 46%;
+            border-radius: 1vw;
+            background-color: #000;
+            display: none;
+        }
+
+        .pitch-catalyst {
+            position: absolute;
+            width: 13%;
+            object-fit: contain;
+            z-index: 2;
+            bottom: 39%;
+            left: 56%;
+            border-radius: 1vw;
+            background-color: #000;
+            display: none;
+        }
+
+        .expert-guidance-and-support {
+            position: absolute;
+            width: 10%;
+            object-fit: contain;
+            z-index: 2;
+            bottom: 36%;
+            left: 36%;
+            border-radius: 1vw;
+            background-color: #000;
+            display: none;
+        }
+
+        // --------------------------------------------------------------------
+
+        .bg-masking-img {
+            width: 25%;
+            animation: OurStoryStartingKF2 1.5s ease-in-out;
+
+        }
+
+        .top-content-div {
+            .heading {
+                font-size: 10vw;
+
+            }
+
+            p {
+                font-size: 3.2vw;
+                font-weight: 400;
+                transition: ease 1s;
+                letter-spacing: 0.15vw;
+                line-height: 4vw;
+                padding: 0 10%;
+            }
+        }
+    }
+}
