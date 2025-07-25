@@ -2,15 +2,13 @@ import React from "react";
 import "./blog-card-two.scss";
 import { Link } from "react-router-dom";
 
-
+//imgs
 import LogoImg from "../../../assets/imgs/blog/logo_frame.png";
 
 const BlogCardTwo = (props) => {
 
     const headingName = props.Heading.replace(/ /g, "-");
     const headingLowerCase = headingName.toLowerCase();
-
-
 
     // to open in new tab 
     // const handleRightClick = (e) => {
