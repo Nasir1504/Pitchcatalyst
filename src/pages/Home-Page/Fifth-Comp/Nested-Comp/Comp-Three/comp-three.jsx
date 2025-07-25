@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import {ImageServer} from '../../../../../img/imageServer';
 
 import './comp-three.scss';
 import { Day } from './Calender/calender';

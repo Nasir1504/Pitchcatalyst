@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './blog-card-comp.scss';
-// import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-// import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import { Link } from 'react-router-dom';

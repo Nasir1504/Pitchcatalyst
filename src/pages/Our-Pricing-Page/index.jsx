@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 //Dependency
 import { Stickyroll } from '@stickyroll/react';
@@ -25,7 +25,7 @@ import LogoImgBG6 from "../../assets/imgs/pricing/Vector 5_35.png";
 export default function OurPricingPage(props) {
 
     const [onLoadAnime, setOnLoadAnime] = useState();
-    const [scrolling, setScrolling] = useState(0);
+    // const [scrolling, setScrolling] = useState(0);
 
     // eslint-disable-next-line
     const [clientHgt, setClientHgt] = useState(document.documentElement.offsetHeight);
@@ -106,7 +106,7 @@ export default function OurPricingPage(props) {
 
     return (
         <div className="our-pricing-page-main-container">
-            <p style={{ position: 'fixed', color: 'white', top: '20%', left: '1%', zIndex: '10' }}>{scrolling.toString()} / {OPCompScrolling.toString()}</p>
+            {/* <p style={{ position: 'fixed', color: 'white', top: '20%', left: '1%', zIndex: '10' }}>{scrolling.toString()} / {OPCompScrolling.toString()}</p> */}
 
             <Stickyroll pages={1.5} factor={4}>
                 <div className="main-container"

@@ -11,12 +11,12 @@ import { Link } from 'react-router-dom';
 
 import LampOn from "../../../assets/imgs/home-page/Group679.png"; 
 import LampOff from "../../../assets/imgs/home-page/group561.png";
-
+import Logo from "../../../assets/imgs/home-page/logo1.png";
 
 
 // const LampOn = 'https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/group560.png';
 // const LampOff = 'https://rentblob.blob.core.windows.net/pitch/img/Pitch-Catalyst/home-page-imgs/group561.png';
-const Logo = `${ImageServer}img/Pitch-Catalyst/home-page-imgs/logo1.png`;
+// const Logo = `${ImageServer}img/Pitch-Catalyst/home-page-imgs/logo1.png`;
 
 
 export default function EleventhComp(props) {

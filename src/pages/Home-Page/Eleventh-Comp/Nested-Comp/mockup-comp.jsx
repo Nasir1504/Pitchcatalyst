@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './mockup-comp.scss';
 import { Tilt } from 'react-tilt';
-import { ImageServer } from '../../../../img/imageServer';
-
 
 
 import Frame2 from "../../../../assets/imgs/home-page/Frame641.png";

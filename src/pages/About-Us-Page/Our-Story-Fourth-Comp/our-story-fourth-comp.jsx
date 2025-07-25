@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './our-story-fourth-comp.scss';
-import { ImageServer } from '../../../img/imageServer';
 
 import Frame1 from "../../../assets/imgs/about/Frame896.png";
 import Frame2 from "../../../assets/imgs/about/Frame896.png";

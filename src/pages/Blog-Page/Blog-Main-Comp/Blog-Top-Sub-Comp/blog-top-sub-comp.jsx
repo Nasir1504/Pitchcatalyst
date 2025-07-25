@@ -1,11 +1,8 @@
-import React from 'react';
 import './blog-top-sub-comp.scss';
-import { ImageServer } from '../../../../img/imageServer';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 
-
-// const BgImg1 = `${ImageServer}img/Pitch-Catalyst/blog-page-img/logo-mask-image.png`;
+// import BgImg1 from "../../../../assets/imgs/blog/logo_frame.png";
 // const HeadingImg = `${ImageServer}img/Pitch-Catalyst/blog-page-img/heading-img.png`;
 import HeadingImg from "../../../../assets/imgs/blog/blog-information.webp";
 

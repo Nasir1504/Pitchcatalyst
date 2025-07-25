@@ -1,5 +1,3 @@
-import React from "react";
-// import ScreenRotationIcon from '@mui/icons-material/ScreenRotation';
 import "./phone-rotation-comp.scss";
 
 export default function PhoneRotationComp() {

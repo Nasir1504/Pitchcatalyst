@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './comp-four.scss';
-import {ImageServer} from '../../../../../img/imageServer';
 
 import Mumbai from "../../../../../assets/imgs/home-page/mask-group.png";
 import Delhi from "../../../../../assets/imgs/home-page/mask-group_2.png"

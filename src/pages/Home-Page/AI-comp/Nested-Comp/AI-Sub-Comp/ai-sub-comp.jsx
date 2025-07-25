@@ -71,8 +71,6 @@ export default function AISubComp(props) {
 
       <div className="content-circle-div"
         style={{
-          transform: animeOne && 'rotate(-180deg) scale(2)',
-
           transform: animeOne && !animeTwo ? 'rotate(-180deg) scale(1.68)' :
             animeOne && animeTwo && 'rotate(-180deg) scale(2.5) translate(-52%)',
           backgroundColor: animeTwo && '#C1DB05'
