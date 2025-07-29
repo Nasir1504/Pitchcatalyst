@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import DemoPitchDeck from "./Pitch-Deck-Demo/demo-pitch-deck";
 
+import Animate from "./animate";
+import Animate2 from "./animate2";
+
 // styles
 import "./App.scss";
 
@@ -332,6 +335,20 @@ function App() {
                 }
               />
 
+              <Route
+                path="/see"
+                element={
+                  <Animate Query={query} HandlePageTitle={handlePageTitle} />
+                }
+              />
+               <Route
+                path="/see2"
+                element={
+                  <Animate2 Query={query} HandlePageTitle={handlePageTitle} />
+                }
+              />
+
+
               <Route path="*" element={<Navigate to="/404" replace />} />
             </Routes>
           </div>
@@ -342,7 +359,8 @@ function App() {
             </div>
           )}
         </BrowserRouter>
-      )}
+      )
+      }
     </div>
   );
 }
